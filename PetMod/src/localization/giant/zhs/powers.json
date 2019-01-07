@@ -1,0 +1,111 @@
+{
+  "FistPower": {
+    "NAME": "Fist",
+    "DESCRIPTIONS": [
+      "Use left,right and final fist cards to combine a combo.",
+      "increase Righthook fist's damage.",
+      "increase Final fist's damage."
+    ]
+  },
+  "EaglePower": {
+    "NAME": "连击",
+    "DESCRIPTIONS": [
+      "你的 连击 层数为 #b",
+      " 层， 可触发下一层 #y连击牌。"
+    ]
+  },
+  "RecoverHP": {
+    "NAME": "时光回溯",
+    "DESCRIPTIONS": [
+      "在第 #b%1$s 个回合结束时， 回复 #b%2$s 点生命。",
+      "在这个回合结束时， 回复 #b%1$s 点生命。"
+    ]
+  },
+  "Infinite First": {
+    "NAME": "先手",
+    "DESCRIPTIONS": [
+      "在每个回合开始时， 添加 #b",
+      " 张 #y先手打击 到你的手牌中。",
+      " 张 #y先手打击 到你的手牌中。"
+    ]
+  },
+   "Death Rattle": {
+    "NAME": "Death Rattle",
+    "DESCRIPTIONS": [
+      "On death, applies #b"   ]
+  },
+  "DeathRattleExplode": {
+    "NAME": "爆炸亡语",
+    "DESCRIPTIONS": [
+      "当该随从死亡时，对所有敌人造成 #b",
+      " 点伤害。"   ]
+  },
+  "DeathRattleHeal": {
+    "NAME": "治疗亡语",
+    "DESCRIPTIONS": [
+      "当该随从死亡时，你将回复 #b",
+      " 点生命。"   ]
+  },
+  "DeathRattleStrength": {
+    "NAME": "力量亡语",
+    "DESCRIPTIONS": [
+      "当该随从死亡时，你和其他随从将获得 #b",
+      " 点 #y力量。"   ]
+  },
+   "Mana Power": {
+    "NAME": "灵力",
+    "DESCRIPTIONS": [
+      "该随从将在 #b",
+      " 个回合后死亡。"   ]
+  },
+  "TimeTravel": {
+    "NAME": "回到原点",
+    "DESCRIPTIONS": [
+      "战斗结束时， 回复 #b%1$s 点生命。"
+    ]
+  },
+  "GiantSpirit": {
+    "NAME": "熟练",
+    "DESCRIPTIONS": [
+      " #y熟练 越高，随从的能力越强。"
+    ]
+  },
+  "ComboForm": {
+    "NAME": "连击形态",
+    "DESCRIPTIONS": [
+      "每回合开始时，获得一层连击。"
+    ]
+  },
+  "BeastMaster": {
+    "NAME": "兽王",
+    "DESCRIPTIONS": [
+      "在每回合开始时，获得 #b",
+      " 点 #y熟练。"
+    ]
+  },
+  "BloodyPower": {
+    "NAME": "嗜血",
+    "DESCRIPTIONS": [
+      "将两张鲜血放入你的抽牌堆中，每当你抽到 #y鲜血 时, 抽 #b1 张牌， 获得 #b1 点力量， 获得 #b3 点生命。",
+      "每当你抽到 #y鲜血 时, 抽 #b",
+      " 张牌， 获得 #b",
+       " #y力量， 获得 #b",
+       " 点生命。"
+    ]
+  },
+  "Unlimited Combo Power": {
+    "NAME": "无限连击",
+    "DESCRIPTIONS": [
+      "在 #b",
+      " 个回合内，你的连击牌可以直接触发。"
+    ]
+  },
+  "Retain Combo Cards": {
+    "NAME": "保留",
+    "DESCRIPTIONS": [
+      "你的连击牌在回合结束后不会进入弃牌堆。"
+    ]
+  }
+  
+  
+ }

@@ -1,0 +1,21 @@
+{
+  "GiantSoulBox": {
+    "NAME": "Soul Bottle",
+    "FLAVOR": "Kill enemies can collect their souls.",
+    "DESCRIPTIONS": [
+      "You will gain #b30 golds and increase #b5 max HP when you level up. NL You level is #b",
+       " . NL Now need #b",
+       " exp to level up. NL After finish enemy floor, normal: 2 exp, elite: 4 exp, boss: 10 exp. NL The max level is 10. 
+      NL Reward: level 5: gian Hunter Medal.";
+    ]
+  },
+  "GiantSoulStone": {
+    "NAME": "Hunter Medal",
+    "FLAVOR": "It proves your are a qualified hunter.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " #ySpirit."
+    ]
+  }
+  
+ }

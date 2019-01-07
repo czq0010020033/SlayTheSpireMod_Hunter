@@ -1,0 +1,310 @@
+{
+  "ByrdPetCall": {
+    "NAME": "Byrd",
+    "DESCRIPTION": "Summon a Byrd. NL It has 3 damages and !M! Mana.",
+    "UPGRADE_DESCRIPTION": "Summon a Byrd. NL It has 4 damages and !M! Mana."
+  },
+   "ChampPetCall": {
+    "NAME": "Champ Call",
+    "DESCRIPTION": "Call a Champ. NL Exhaust."
+  },
+   "CultistPetCall": {
+    "NAME": "Cultist",
+  "DESCRIPTION": "Summon a Cultist. NL It has 6 damages and !M! Mana.",
+    "UPGRADE_DESCRIPTION": "Summon a Cultist. NL It has 8 damages and !M! Mana."
+  },
+   "DonuPetCall": {
+    "NAME": "Donu Call",
+    "DESCRIPTION": "Call a Donu. NL Exhaust."
+  },
+   "GremlinFatPetCall": {
+    "NAME": "GremlinFat Call",
+    "DESCRIPTION": "Call a GremlinFat. NL Exhaust."
+  },
+   "GremlinNobPetCall": {
+    "NAME": "GremlinNob Call",
+    "DESCRIPTION": "Call a GremlinNob. NL Exhaust."
+  },
+   "GremlinTsunderePetCall": {
+    "NAME": "GremlinTsundere",
+    "DESCRIPTION": "Summon a GremlinTsundere. NL It has !M! Mana and can give you 8 Block",
+    "UPGRADE_DESCRIPTION": "Summon a GremlinTsundere with a random DeathRattle. NL It has !M! Mana and can give you 8 Block."
+  }
+  ,
+   "HealerPetCall": {
+    "NAME": "Healer",
+    "DESCRIPTION": "Summon a Healer. NL It has !M! Mana and can heal you 6 HP.",
+    "UPGRADE_DESCRIPTION": "Summon a Healer with a random DeathRattle. NL It has !M! Mana and can heal you 8 HP."
+  }
+  ,
+   "PetCapture": {
+    "NAME": "Capture",
+    "DESCRIPTION": "Capture a monster if the monster's life is less than 8 or 20%.NL if it failed that take !D! damage. NL Exhaust."
+  }
+  ,
+   "SneckoPetCall": {
+    "NAME": "Snecko Call",
+    "DESCRIPTION": "Call a Snecko. NL Exhaust."
+  }
+  ,
+   "FinalFist": {
+    "NAME": "Final Fist",
+    "DESCRIPTION": "Deal !D! Damage. "
+  } ,
+   "LeftHookFist": {
+    "NAME": "LeftHook Fist",
+    "DESCRIPTION": "Deal !D! Damage. NL Apply a Combo."
+  } ,
+   "RightHookFist": {
+    "NAME": "RightHook Fist",
+    "DESCRIPTION": "Deal !D! Damage. "
+  } ,
+   "EagleFirst": {
+    "NAME": "Shoot-1",
+    "DESCRIPTION": "Deal !D! damage. NL Combo."
+  } ,
+   "EagleSecond": {
+    "NAME": "Shoot-2",
+    "DESCRIPTION": "Deal !D! damage. NL Combo-2: Increase !M! damage.",
+     "EXTENDED_DESCRIPTION": [
+      " NL Available."]
+  } ,
+   "EagleThird": {
+    "NAME": "Shoot-3",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Combo-3: Increase !M! damage.",
+     "EXTENDED_DESCRIPTION": [
+      " NL Available."
+    ]
+  },
+  "Combo Connect": {
+    "NAME": "Continue Shoot-N",
+    "DESCRIPTION": "Deal !D! damage. NL Combo-N: Gain [R] and draw a card."
+  },
+ 	"SnakeForm": {
+    "NAME": "Snake Form",
+    "DESCRIPTION": "Get confusion. NL Draw !M! card each turn.",
+      "UPGRADE_DESCRIPTION": "Innate. NL Get confusion. NL Draw !M! card each turn."
+  },
+ 	"CultistForm": {
+    "NAME": "Cultist Form",
+    "DESCRIPTION": "Gain !M! Strength each turn."
+  },
+  "Heal Wind": {
+    "NAME": "Heal Wind",
+    "DESCRIPTION": "Exhaust all non-Attack cards in your hand. Gain !M! HP for each card Exhausted."
+  },
+  "Giant Prayer": {
+    "NAME": "Prayer",
+    "DESCRIPTION": "Add a random card into your hand. NL It costs 0 this turn. NL Exhaust.",
+     "EXTENDED_DESCRIPTION": [
+      " NL Echo.",
+      " NL Ethereal."
+    ]
+  },
+  "Blood Attack": {
+    "NAME": "BloodAttack",
+    "DESCRIPTION": "Lose !M! HP. NL Deal !D! damage. NL Shuffle a Blood into your draw pile. NL Exhaust."
+  },
+  "One Blood": {
+    "NAME": "One Blood",
+    "DESCRIPTION": "Gain !B! Block( !M! times your lost HP). NL Lose HP to 1. NL Block is not removed at the start of your next 4 turn. NL Exhaust."
+  }
+  ,
+  "Recover HP": {
+    "NAME": "Recover",
+    "DESCRIPTION": "At the end of 3 turns, recover your lost HP in this turns."
+  },
+  "First Combo": {
+    "NAME": "FirstCombo-1",
+    "DESCRIPTION": "Deal !D! damage. NL Combo. NL Exhaust."
+  },
+  "Infinite Combo": {
+    "NAME": "Infinite Combo",
+    "DESCRIPTION": "At the start of your turn, add a FirstCombo into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a FirstCombo into your hand."
+  }  ,
+  "Seek Combo": {
+    "NAME": "Seek Combo",
+    "DESCRIPTION": "Shuffle your discard pile into your draw pile. NL Choose a Combo from your draw pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your draw pile. NL Choose a Combo from your draw pile into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "There are no Combos NL in my draw pile."
+    ]
+  },
+   "Retain Combo": {
+    "NAME": "Retain Combo",
+    "DESCRIPTION": "At the end of turn, retain your combos in your hand."
+    
+  }, 
+  "Unlimited Combo": {
+    "NAME": "Unlimited Combo",
+    "DESCRIPTION": "Your combo card can trigger without other condition in this turn.",
+     "UPGRADE_DESCRIPTION": "Your combo card can trigger without other condition in this and next turn."
+  }, 
+  "Discover Combo": {
+    "NAME": "Discover Combo",
+     "DESCRIPTION": "Choose 1 of 3 random Combo cards to add into your hand. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 random Combo cards to add into your hand. It costs 0 this turn."
+  }, 
+  "Discover Pet": {
+    "NAME": "Discover Minions",
+     "DESCRIPTION": "Choose 1 of 3 random Minion cards to add into your hand. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 random Minion cards to add into your hand. It costs 0 this turn."
+  }, 
+  "Double Mana": {
+    "NAME": "Nourish",
+    "DESCRIPTION": "Triple the minion's health and Mana. NL Exhaust.",
+       "UPGRADE_DESCRIPTION": "Fivefold the minion's health and Mana. NL Exhaust."
+  }
+  , 
+  "Up Up Up": {
+    "NAME": "UP UP UP",
+    "DESCRIPTION": "Increase !M! Strength and Mana to a pet. NL Exhaust. NL Echo."
+  } , 
+  "Double Hp": {
+    "NAME": "Double Hp",
+    "DESCRIPTION": "Double the Hp. NL Exhaust."
+  } , 
+  "Death Explode": {
+    "NAME": "Death Explode",
+    "DESCRIPTION": "Decrease a Minions's Mana to 1 and give DeathRattle: Explode !M! times. NL Echo."
+  } , 
+  "Sacrifice Summons": {
+    "NAME": "Sacrifice Minions",
+    "DESCRIPTION": "Immolate all Minions. NL each immolate Minion get a 0 cost Minion Card.",
+    "UPGRADE_DESCRIPTION": "Immolate all Minions. NL each immolate Minion get a 0 cost and upgraded Minion Card."
+  }, 
+  "Random Death Rattle": {
+    "NAME": "Death",
+    "DESCRIPTION": "Give DeathRattles: Explode, Sacrifice, Revenge."
+  },
+  "Time Travel": {
+    "NAME": "Time Travel",
+    "DESCRIPTION": "Mark your HP, at the end of battle, recover HP to the mark number."
+  },
+  "Revenge Attack": {
+    "NAME": "Revenge",
+    "DESCRIPTION": "Deal !D! damage. NL The damage is 12 plus your received damage this combat."
+  },
+  "Blood Defend": {
+    "NAME": "Blood Defend",
+    "DESCRIPTION": "Lose 2 HP, NL Gain !B! Block. NL Shuffle a Blood into your draw pile. NL Echo."
+  },
+  "Duplicate Hand": {
+    "NAME": "Duplicate Hand",
+    "DESCRIPTION": "Copy your hand cards to draw pile. NL Exhuast.",
+      "UPGRADE_DESCRIPTION":"Copy your hand cards to draw pile."
+  },
+  "Defend_Giant": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gian !B! block."
+  },
+  "Spirit Of Beast": {
+    "NAME": "Spirit",
+    "DESCRIPTION": "Gian !M! spirit."
+  },
+  "Mana Growth": {
+    "NAME": "Mana Growth",
+    "DESCRIPTION": "Gian !B! Block. NL Your Minions gain !M! Mana."
+  },
+  "Backflip Giant": {
+    "NAME": "Backflip",
+    "DESCRIPTION": "Gain !B! Block. NL Draw 2 cards."
+  }, 
+  "Combo Form": {
+    "NAME": "Combo Form",
+    "DESCRIPTION": "At the start of your turn, gain combo-1.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, gain combo-1."
+  }, 
+  "Death Prophecy": {
+    "NAME": "Death Prophecy",
+    "DESCRIPTION": "Trigger the DeathRattle.",
+    "UPGRADE_DESCRIPTION": "Trigger the DeathRattle."
+  }, 
+  "Burning Pact Giant": {
+    "NAME": "Overload",
+    "DESCRIPTION": "Exhaust 2 card. NL Draw !M! cards."
+  },
+   "Pummel Giant": {
+    "NAME": "Pummel-2",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Combo-2: Increase 2 times. ",
+     "EXTENDED_DESCRIPTION": [
+      " NL Available"]
+  },
+   "Beast Master": {
+    "NAME": "Beast Master",
+    "DESCRIPTION": "At the start of your turn, gain !M! Spirit."
+  },
+    "Blood Giant": {
+    "NAME": "Blood",
+    "DESCRIPTION": "Unplayable. NL Ethereal."
+  },
+  "Bloody Giant": {
+    "NAME": "Bloody",
+    "DESCRIPTION": "Shuffle 2 Blood into your draw pile. Whenever you draw a Blood card, draw !M! card, gain !M! Strength, heal 3 HP.",
+    "UPGRADE_DESCRIPTION": "Shuffle 2 Blood into your draw pile. Whenever you draw a Blood card, draw !M! cards, gain !M! Strength, heal 3 HP."
+  },
+  "Echo Defend Giant": {
+    "NAME": "Echo Defend",
+    "DESCRIPTION": "Gain !B! Block. NL Echo.",
+     "EXTENDED_DESCRIPTION": [
+      " NL Ethereal. NL Exhaust."]
+  },
+  "Echo Attack": {
+    "NAME": "Echo Attack",
+    "DESCRIPTION": "Deal !D! damage. NL Echo.",
+     "EXTENDED_DESCRIPTION": [
+      " NL Ethereal. NL Exhaust."]
+  },
+   "Strike_Giant": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+   "Combo Recycle": {
+    "NAME": "Combo Recycle-N",
+    "DESCRIPTION": "Deal !D! damage. NL Combo-N: Gain [R] [R] and draw 1 card."
+  },
+   "Combo Defend": {
+    "NAME": "Prevent-N",
+    "DESCRIPTION": "Gain !B! block. NL Combo."
+  },
+   "Backward Giant": {
+    "NAME": "Backward-3",
+    "DESCRIPTION": "Gain !B! block. NL Combo-3: Increase !M! Block and Blocks will not disappear in 2 turn."
+  },
+  "Fanatic Cultist": {
+    "NAME": "Fanatic",
+    "DESCRIPTION": "Your Cultists gain !M! Strength but reduce 2 Mana. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Your Cultists gain !M! Strength but reduce 2 Mana."
+  } ,
+  "Seek Pet": {
+    "NAME": "Seek Minion",
+    "DESCRIPTION": "Choose a Minion from your draw pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Choose two Minions from your draw pile into your hand. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "There are no Minions NL in my draw pile."
+    ]
+  },
+  "Rupture Giant": {
+    "NAME": "Rupture",
+    "DESCRIPTION": "Whenever you lose HP from a card, NL gain 1 Strength."
+  }, 
+  "Meditate Giant": {
+    "NAME": "Meditate-4",
+    "DESCRIPTION": "Gain !B! Block. NL Draw a card. NL Combo-4: Gain [R] [R] and draw more !M! cards.",
+     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw a card. NL Combo-4: Gain [R] [R] [R] and draw more !M! cards."
+  },
+   "The End Giant": {
+    "NAME": "The End-5",
+    "DESCRIPTION": "Deal !D! damage twice to all enemies. NL Combo-5: Gain !B! block. Increase !M! damage."
+  },
+  "Struggle Attack": {
+    "NAME": "Struggle Attack",
+    "DESCRIPTION": "Deal !D! damage(your lost HP plus 5, Max 50). NL Shuffle a Blood into your draw pile."
+  },
+  "Storm Of Blood": {
+    "NAME": "Storm of Blood",
+    "DESCRIPTION": "Discard your hand. NL Add 1 BloodAttack into your hand for each card discarded.",
+    "UPGRADE_DESCRIPTION": "Discard your hand. NL Add 1 upgraded BloodAttack into your hand for each card discarded."
+  }
+}

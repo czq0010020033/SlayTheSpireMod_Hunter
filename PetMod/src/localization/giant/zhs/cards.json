@@ -1,0 +1,309 @@
+{
+  "ByrdPetCall": {
+    "NAME": "异鸟",
+    "DESCRIPTION": "召唤有 3 点攻击的 异鸟 ，持续 !M! 回合。",
+    "UPGRADE_DESCRIPTION": "召唤有 4 点攻击的 异鸟  ，持续 !M! 回合。"
+  },
+   "ChampPetCall": {
+    "NAME": "Champ Call",
+    "DESCRIPTION": "Call a Champ. NL Exhaust."
+  },
+   "CultistPetCall": {
+    "NAME": "异教徒",
+    "DESCRIPTION": "召唤有 6 点攻击的 异教徒 ，持续 !M! 回合。",
+    "UPGRADE_DESCRIPTION": "召唤有 8 点攻击的 异教徒  ，持续 !M! 回合。"
+  },
+   "DonuPetCall": {
+    "NAME": "Donu Call",
+    "DESCRIPTION": "Call a Donu. NL Exhaust."
+  },
+   "GremlinFatPetCall": {
+    "NAME": "GremlinFat Call",
+    "DESCRIPTION": "Call a GremlinFat. NL Exhaust."
+  },
+   "GremlinNobPetCall": {
+    "NAME": "GremlinNob Call",
+    "DESCRIPTION": "Call a GremlinNob. NL Exhaust."
+  },
+   "GremlinTsunderePetCall": {
+    "NAME": "持盾地精",
+    "DESCRIPTION": "召唤会给 8 点 格挡 的 持盾地精 ，持续 !M! 回合 。",
+    "UPGRADE_DESCRIPTION": "召唤会给 10 点 护甲 并附带一个随机 亡语 的  持盾地精 ，持续 !M! 回合 。"
+  }
+  ,
+   "HealerPetCall": {
+    "NAME": "牧师",
+     "DESCRIPTION": "召唤会回复 6 点生命的 牧师 ，持续 !M! 回合 。",
+    "UPGRADE_DESCRIPTION": "召唤会回复 8 点生命并附带一个随机 亡语 的  牧师 ，持续 !M! 回合 。"
+  }
+  ,
+   "PetCapture": {
+    "NAME": "Capture",
+    "DESCRIPTION": "Capture a monster if the monster's life is less than 8 or 20%.NL if it failed that take !D! damage. NL Exhaust."
+  }
+  ,
+   "SneckoPetCall": {
+    "NAME": "Snecko Call",
+    "DESCRIPTION": "Call a Snecko. NL Exhaust."
+  }
+  ,
+   "FinalFist": {
+    "NAME": "Final Fist",
+    "DESCRIPTION": "Deal !D! Damage. "
+  } ,
+   "LeftHookFist": {
+    "NAME": "LeftHook Fist",
+    "DESCRIPTION": "Deal !D! Damage. NL Apply a Combo."
+  } ,
+   "RightHookFist": {
+    "NAME": "RightHook Fist",
+    "DESCRIPTION": "Deal !D! Damage. "
+  } ,
+   "EagleFirst": {
+    "NAME": "箭击-1",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 连击 "
+  } ,
+   "EagleSecond": {
+    "NAME": "箭击-2",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 连击 -2: 增加 !M! 点 伤害。 ",
+     "EXTENDED_DESCRIPTION": [
+      " NL 触发"]
+  } ,
+   "EagleThird": {
+    "NAME": "箭击-3",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害. NL 连击 -3:  增加 !M! 点伤害。",
+     "EXTENDED_DESCRIPTION": [
+      " NL 触发"
+    ]
+  },
+  "Combo Connect": {
+    "NAME": "连续箭击-N",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 连击 -N : 获得 [R] 并抽 1 张牌。"
+  },
+ 	"SnakeForm": {
+    "NAME": "异蛇形态",
+    "DESCRIPTION": "产生 混乱 。 NL 每回合多抽 !M! 张牌。 ",
+      "UPGRADE_DESCRIPTION": "固有。 NL 产生 混乱 。 NL 每回合多抽 !M! 张牌。 "
+  },
+ 	"CultistForm": {
+    "NAME": "咔咔形态",
+    "DESCRIPTION": "每回合开始时获得 !M! 点 力量 。"
+  },
+  "Heal Wind": {
+    "NAME": "治愈",
+    "DESCRIPTION": "消耗 手牌中所有非攻击牌，每张获得 !M! 点 生命。"
+  },
+  "Giant Prayer": {
+    "NAME": "祈祷",
+    "DESCRIPTION": "增加一张随机牌到你的手牌。 NL 这张牌在本回合耗能变为0。  NL 消耗 。",
+     "EXTENDED_DESCRIPTION": [
+      " NL 回响 。",
+      " NL 虚无 。"
+    ]
+  },
+  "Blood Attack": {
+    "NAME": "嗜血打击",
+    "DESCRIPTION": "失去 !M! 点生命，造成 !D! 点伤害。 NL 将一张 鲜血 放入你的抽牌堆中。 NL 消耗 。"
+  },
+  "One Blood": {
+    "NAME": "一血传奇",
+    "DESCRIPTION": "获得 !B! 格挡 ( !M! 倍失去的生命)。 NL 生命降为 1 点。 NL接下来的 4 个回合 格挡 不会消失。  NL 消耗 。"
+  }
+  ,
+  "Recover HP": {
+    "NAME": "时光回溯",
+    "DESCRIPTION": " 3 个回合后，回复在这 3 个回合内损失的生命。"
+  },
+  "First Combo": {
+    "NAME": "先手打击-1",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 连击。 NL 消耗 。"
+  },
+  "Infinite Combo": {
+    "NAME": "先手",
+    "DESCRIPTION": "在你的回合开始时， 获得一张 先手打击 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 在你的回合开始时， 获得一张 先手打击 。"
+  }  ,
+  "Seek Combo": {
+    "NAME": "连击 检索",
+    "DESCRIPTION": "将弃牌堆中的牌洗入抽牌堆，并从你的抽牌堆选择一张 连击 牌放入你的手牌。  NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将弃牌堆中的牌洗入抽牌堆，并从你的抽牌堆选择一张 连击 牌放入你的手牌。",
+    "EXTENDED_DESCRIPTION": [
+      "你的抽牌堆中没有 连击 牌。"
+    ]
+  },
+   "Retain Combo": {
+    "NAME": "保留余力",
+    "DESCRIPTION": "回合结束时，你的 连击 牌将保留。"
+  }, 
+  "Unlimited Combo": {
+    "NAME": "无限连击",
+    "DESCRIPTION": "在这个回合，你的 连击 牌可直接触发。",
+    "UPGRADE_DESCRIPTION": "两个回合内，你的 连击 牌可直接触发。"
+  }, 
+  "Discover Combo": {
+    "NAME": "发现 连击",
+    "DESCRIPTION": "从3张随机 连击 牌中选择1张加入你的手牌。这张牌在本回合耗能变为0。 NL 消耗 。 ",
+    "UPGRADE_DESCRIPTION": "从3张随机 连击 牌中选择1张牌加入你的手牌。这张牌在本回合耗能变为0。"
+  }, 
+  "Discover Pet": {
+    "NAME": "发现 随从",
+    "DESCRIPTION": "从3张随机 随从 牌中选择1张加入你的手牌。这张牌在本回合耗能变为0。 NL 消耗 。 ",
+    "UPGRADE_DESCRIPTION": "从3张随机 随从 牌中选择1张加入你的手牌。这张牌在本回合耗能变为0。"
+  }, 
+  "Double Mana": {
+    "NAME": "滋养",
+    "DESCRIPTION": "将一个 随从  最大血量和 灵力  变为三倍。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将一个 随从 最大血量和 灵力 变五倍。 NL 消耗 。"
+  }
+  , 
+  "Up Up Up": {
+    "NAME": "激素",
+    "DESCRIPTION": "使一个随从 获得 !M! 点力量和 灵力 。 NL 消耗 。 NL 回响 。"
+  } , 
+  "Double Hp": {
+    "NAME": "Double Hp",
+    "DESCRIPTION": "Double the Mana. NL Exhaust."
+  } , 
+  "Death Explode": {
+    "NAME": "爆炸",
+    "DESCRIPTION": "使一个随从灵力降为 1，并施放 亡语 ：!M!倍 爆炸 。 NL 回响 。"
+  } , 
+  "Sacrifice Summons": {
+    "NAME": "牺牲",
+    "DESCRIPTION": "牺牲所有 随从 , 每牺牲一个获得 1 张当前回合为0费的随从卡牌。",
+     "UPGRADE_DESCRIPTION": "牺牲所有 随从 , 每牺牲一个获得 1 张当前回合为0费的升级的随从卡牌。"
+  }, 
+  "Random Death Rattle": {
+    "NAME": "死不瞑目",
+    "DESCRIPTION": "使一个 随从 获得 亡语 ：爆炸 ，奉献 ，激怒 。 "
+  },
+  "Time Travel": {
+    "NAME": "回到原点",
+    "DESCRIPTION": "标记你的血量，在战斗结束时，若小于标记血量，则回复到之前的标记值。"
+  },
+  "Revenge Attack": {
+    "NAME": "复仇",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 伤害为 12 加上你在这场战斗中损失的血量。"
+  },
+  "Blood Defend": {
+    "NAME": "血盾",
+    "DESCRIPTION": "失去 2 点生命。 NL 获得 !B! 点 格挡 。 NL 将一张 鲜血 放入你的抽牌堆中。 NL 回响 。"
+  },
+  "Duplicate Hand": {
+    "NAME": "复制",
+    "DESCRIPTION": "复制你手中的所有牌到抽牌堆中。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION":"复制你手中的所有牌到抽牌堆中。"
+  },
+  "Defend_Giant": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "Spirit Of Beast": {
+    "NAME": "野兽之力",
+    "DESCRIPTION": "获得 !M! 点 熟练 。"
+  },
+  "Mana Growth": {
+    "NAME": "灵力成长",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你的随从获得 !M! 点 灵力 。"
+  },
+  "Backflip Giant": {
+    "NAME": "后空翻",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 2 张牌。"
+  }, 
+  "Combo Form": {
+    "NAME": "连击形态",
+    "DESCRIPTION": "每回合开始时，获得 1 层 连击 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每回合开始时，获得 1 层 连击 。"
+  }, 
+  "Death Prophecy": {
+    "NAME": "预言",
+    "DESCRIPTION": "触发一个随从的 亡语 。",
+    "UPGRADE_DESCRIPTION": "触发所有随从的 亡语 。"
+  }, 
+  "Burning Pact Giant": {
+    "NAME": "过载",
+    "DESCRIPTION": "消耗 2 张牌。 NL 抽 !M! 张牌。"
+  },
+   "Pummel Giant": {
+    "NAME": "连续拳-2",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 连击 -2 : 次数增加 2 。 ",
+     "EXTENDED_DESCRIPTION": [
+      " NL 触发"]
+  },
+   "Beast Master": {
+    "NAME": "兽王",
+    "DESCRIPTION": "每回合开始时， 获得 !M! 点 熟练 。"
+  },
+    "Blood Giant": {
+    "NAME": "鲜血",
+    "DESCRIPTION": "不能被打出。 NL 虚无 。"
+  },
+  "Bloody Giant": {
+    "NAME": "嗜血",
+    "DESCRIPTION": "将2张 鲜血 放入你的抽牌堆中。每当你抽到鲜血时, 抽 !M! 张牌， 获得 !M! 点力量， 回复 3 点生命。",
+    "UPGRADE_DESCRIPTION": "将2张 鲜血 放入你的抽牌堆中。每当你抽到鲜血时, 抽 !M! 张牌， 获得 !M! 点力量， 回复 3 点生命。"
+  },
+  "Echo Defend Giant": {
+    "NAME": "早有准备",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回响 。",
+     "EXTENDED_DESCRIPTION": [
+      " NL 虚无 。 NL 消耗 。"]
+  },
+   "Echo Attack": {
+    "NAME": "预备打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 回响 。",
+     "EXTENDED_DESCRIPTION": [
+      " NL 虚无 。 NL 消耗 。"]
+  } ,
+   "Strike_Giant": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+   "Combo Recycle": {
+    "NAME": "隐秘打击-N",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 连击 -N : 获得  [R] [R] ，抽一张牌。"
+  },
+   "Combo Defend": {
+    "NAME": "以守为攻-1",
+    "DESCRIPTION": "获得!B! 点 格挡 。 NL 连击 。"
+  },
+   "Backward Giant": {
+    "NAME": "以退为进-3",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 连击-3 : 提高 !M! 点，并且 2 个回合内格挡不会消失。"
+  },
+  "Fanatic Cultist": {
+    "NAME": "狂热",
+    "DESCRIPTION": "你的 异教徒 们获得 !M! 点力量 但是 减少 2 点 灵力 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "你的 异教徒 们获得 !M! 点力量 但是 减少 2 点 灵力 。"
+  },
+  "Seek Pet": {
+    "NAME": "随从 检索",
+    "DESCRIPTION": "从你的抽牌堆选择一张 随从 牌放入你的手牌。  NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 固有。 NL 从你的抽牌堆选择一张 随从 牌放入你的手牌。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "你的抽牌堆中没有 随从 牌。"
+    ]
+  }, 
+  "Rupture Giant": {
+    "NAME": "撕裂",
+    "DESCRIPTION": "每当你从一张牌中失去生命时，获得1点 力量 。"
+  }, 
+  "Meditate Giant": {
+    "NAME": "冷静思考-4",
+    "DESCRIPTION": "获得 !B! 点 格挡 。抽 1 张牌。 NL 连击 -4：获得 [R] [R] ，再抽 !M! 张牌。",
+     "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。抽一张牌。 NL 连击 -4：获得 [R] [R] [R] ，再抽 !M! 张牌。"
+  },
+   "The End Giant": {
+    "NAME": "终结-5",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 2 次。 NL 连击 -5: 获得 !B! 点 格挡 ， 增加 !M! 点 伤害。"
+  },
+  "Struggle Attack": {
+    "NAME": "残血反击",
+    "DESCRIPTION": "造成 !D! 点伤害，将一张 鲜血 放入抽牌堆。 NL 伤害为5加上你已损失的生命值, 最大值50。"
+  },
+  "Storm Of Blood": {
+    "NAME": "鲜血风暴",
+    "DESCRIPTION": "丢弃所有手牌。 NL 每丢弃一张牌，在你的手牌中增加一张 嗜血打击 。",
+    "UPGRADE_DESCRIPTION": "丢弃所有手牌。 NL 每丢弃一张牌，在你的手牌中增加一张已 升级 的 嗜血打击 。"
+  }
+}

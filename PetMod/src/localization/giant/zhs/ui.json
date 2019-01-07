@@ -1,0 +1,23 @@
+{
+  "StringConstant": {
+    "TEXT": [
+      "这不是一个随从！",
+      " NL 回响 。",
+      " NL 消耗 。",
+      " NL 虚无 。",
+      " 固有 。 NL ",
+      " NL 触发 。",
+      "你最多只能拥有两个随从！"
+    ]
+  },
+   "ComboFromDeckToHandAction": {
+    "TEXT": [
+      "选择一张 连击 牌添加到你的手牌中。"
+    ]
+  },
+  "PetFromDeckToHandAction": {
+    "TEXT": [
+      "选择一张 随从 牌添加到你的手牌中。"
+    ]
+  }
+ }

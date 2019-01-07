@@ -1,0 +1,109 @@
+{
+  "FistPower": {
+    "NAME": "Fist",
+    "DESCRIPTIONS": [
+      "Use left,right and final fist cards to combine a combo.",
+      "increase Righthook fist's damage.",
+      "increase Final fist's damage."
+    ]
+  },"EaglePower": {
+    "NAME": "Combo",
+    "DESCRIPTIONS": [
+      "Your combo level is #b",
+      " , the next level combo card can be trigger."
+    ]
+  },"RecoverHP": {
+    "NAME": "Recover",
+    "DESCRIPTIONS": [
+      "At the end of #b%1$s turns, heal #b%2$s HP.",
+      "At the end of this turn, heal #b%1$s HP."
+    ]
+  },
+  "Infinite First": {
+    "NAME": "Infinite Combo",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " #yFirstCombos into your hand.",
+      " #yFirstCombo into your hand."
+    ]
+  },
+   "Death Rattle": {
+    "NAME": "DeathRattle",
+    "DESCRIPTIONS": [
+      "On death, applies #b"   ]
+  },
+  "DeathRattleExplode": {
+    "NAME": "Explode",
+    "DESCRIPTIONS": [
+      "On death, damage #b",
+      " to all Enemies. "   ]
+  },
+  "DeathRattleHeal": {
+    "NAME": "Heal",
+    "DESCRIPTIONS": [
+      "On death, heal your player #b",
+      " HP."   ]
+  },
+  "DeathRattleStrength": {
+    "NAME": "Death Strength",
+    "DESCRIPTIONS": [
+      "After death, Give player and minions #b",
+      " strength."   ]
+  },
+   "Mana Power": {
+    "NAME": "Mana",
+    "DESCRIPTIONS": [
+      "The minion will die in #b",
+      " turns."   ]
+  },
+  "TimeTravel": {
+    "NAME": "Time Travel",
+    "DESCRIPTIONS": [
+      "At the end of this battle, heal #b%1$s HP."
+    ]
+  },
+  "GiantSpirit": {
+    "NAME": "Spirit",
+    "DESCRIPTIONS": [
+      "Spirit can increase the minions capacity."
+    ]
+  },
+  "ComboForm": {
+    "NAME": "Combo Form",
+    "DESCRIPTIONS": [
+      "At the start of turn, gain combo-1."
+    ]
+  },
+  "BeastMaster": {
+    "NAME": "Beast Master",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b",
+      " #ySpirit."
+    ]
+  },
+  "BloodyPower": {
+    "NAME": "Bloody",
+    "DESCRIPTIONS": [
+      "Whenever you draw a #yBlood card, draw #b1 card, gain #b1 strength, heal #b3 HP.",
+      "Whenever you draw a #yBlood card, draw #b",
+      " cards, gain #b",
+       " strength, heal #b",
+       " HP."
+    ]
+  },
+  "Unlimited Combo Power": {
+    "NAME": "Unlimited Combo",
+    "DESCRIPTIONS": [
+      "In #b",
+      " turn, your combo cards can trigger anytime."
+    ]
+  },
+  "Retain Combo Cards": {
+    "NAME": "Retain combo",
+    "DESCRIPTIONS": [
+      "After the end of turn, your combo card will not discard."
+    ]
+  }
+  
+  
+ }

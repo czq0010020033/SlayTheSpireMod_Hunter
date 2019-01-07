@@ -1,0 +1,23 @@
+{
+  "StringConstant": {
+    "TEXT": [
+      "This is not a minion!",
+      " NL Echo.",
+      " NL Exhaust.",
+      " NL Ethereal.",
+      " Innate. NL ",
+      " NL Available.",
+      " NL You can only have two minions!"
+    ]
+  },
+  "ComboFromDeckToHandAction": {
+    "TEXT": [
+      "Choose a Combo to Add to Your Hand."
+    ]
+  },
+  "Choose a Minion to Add to Your Hand.": {
+    "TEXT": [
+      "Choose a Minion to Add to Your Hand."
+    ]
+  }
+ }
