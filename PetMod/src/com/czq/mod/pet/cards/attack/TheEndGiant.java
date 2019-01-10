@@ -73,7 +73,7 @@ public class TheEndGiant extends AbstractComboAttackCard {
 		if (!this.upgraded) {
 			upgradeName();
 			upgradeDamage(4);
-			upgradeDamage(20);
+			upgradeMagicNumber(10);
 		}
 	}
 }

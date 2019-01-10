@@ -10,8 +10,8 @@
   },
    "CultistPetCall": {
     "NAME": "Cultist",
-  "DESCRIPTION": "Summon a Cultist. NL It has 6 damages and !M! Mana.",
-    "UPGRADE_DESCRIPTION": "Summon a Cultist. NL It has 8 damages and !M! Mana."
+  "DESCRIPTION": "Summon a Cultist. NL It has 4 damages and !M! Mana.",
+    "UPGRADE_DESCRIPTION": "Summon a Cultist. NL It has 6 damages and !M! Mana."
   },
    "DonuPetCall": {
     "NAME": "Donu Call",
@@ -23,18 +23,19 @@
   },
    "GremlinNobPetCall": {
     "NAME": "GremlinNob Call",
-    "DESCRIPTION": "Call a GremlinNob. NL Exhaust."
+    "DESCRIPTION": "Call a GremlinNob. NL It has 4 damages and !M! Mana. NL Exhaust.",
+     "UPGRADE_DESCRIPTION": "Call a GremlinNob. NL It has 6 damages and !M! Mana. NL Exhaust."
   },
    "GremlinTsunderePetCall": {
     "NAME": "GremlinTsundere",
-    "DESCRIPTION": "Summon a GremlinTsundere. NL It has !M! Mana and can give you 8 Block",
-    "UPGRADE_DESCRIPTION": "Summon a GremlinTsundere with a random DeathRattle. NL It has !M! Mana and can give you 8 Block."
+    "DESCRIPTION": "Summon a GremlinTsundere. NL It has !M! Mana and can give you 6 Block. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Summon a GremlinTsundere with a random DeathRattle. NL It has !M! Mana and can give you 6 Block. NL Exhaust."
   }
   ,
    "HealerPetCall": {
     "NAME": "Healer",
-    "DESCRIPTION": "Summon a Healer. NL It has !M! Mana and can heal you 6 HP.",
-    "UPGRADE_DESCRIPTION": "Summon a Healer with a random DeathRattle. NL It has !M! Mana and can heal you 8 HP."
+    "DESCRIPTION": "Summon a Healer. NL It has !M! Mana and can heal you 6 HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Summon a Healer with a random DeathRattle. NL It has !M! Mana and can heal you 6 HP. NL Exhaust."
   }
   ,
    "PetCapture": {
@@ -306,5 +307,14 @@
     "NAME": "Storm of Blood",
     "DESCRIPTION": "Discard your hand. NL Add 1 BloodAttack into your hand for each card discarded.",
     "UPGRADE_DESCRIPTION": "Discard your hand. NL Add 1 upgraded BloodAttack into your hand for each card discarded."
+  },
+  "Cooperation Attack": {
+    "NAME": "Cooperation",
+    "DESCRIPTION": "Deal !D! damage. NL If you have Minions, apply !M! Weak and !M! Vulnerable."
+  },
+   "DefectPetCall": {
+    "NAME": "Broken Defect",
+    "DESCRIPTION": "Summon a Defect. NL It has 6 damages to all enemies and !M! Mana.",
+    "UPGRADE_DESCRIPTION": "Summon a Defect. NL It has 8 damages to all enemies and !M! Mana."
   }
 }

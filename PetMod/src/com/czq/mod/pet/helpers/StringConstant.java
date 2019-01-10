@@ -25,5 +25,15 @@ public class StringConstant {
 	  public static final String Innate = TEXT[4];
 	  public static final String Available = TEXT[5];
 	  public static final String PetCallcantUse = TEXT[6];
+	  
+	  //monster intent
+	  public static final String IntentBlock_1 =   TEXT[7];
+	  public static final String IntentBlock_2 = TEXT[8];
+	  public static final String IntentHeal_1 =   TEXT[9]; 
+	  public static final String IntentHeal_2 = TEXT[10];
+	  public static final String IntentLighting_1 =   TEXT[11]; 
+	  public static final String IntentLighting_2 = TEXT[12];
+	  public static final String IntentLighting_3 =   TEXT[13]; 
+	  public static final String IntentLighting_4 = TEXT[14];
 		  
 }

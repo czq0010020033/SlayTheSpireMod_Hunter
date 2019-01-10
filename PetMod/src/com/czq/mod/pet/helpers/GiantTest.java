@@ -3,14 +3,7 @@
  */    
 package com.czq.mod.pet.helpers;
 
-import java.io.File;
-import java.lang.reflect.Field;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import com.badlogic.gdx.graphics.Color;
-import com.czq.mod.pet.cards.attack.FirstCombo;
+import java.util.ArrayList;
 
 /**
  * 描述: TODO(描述这个类的作用)<br><br>
@@ -24,9 +17,9 @@ import com.czq.mod.pet.cards.attack.FirstCombo;
 public class GiantTest {
 	 
 	public static void main(String[] args) {
-		Logger logger = LogManager
-				.getLogger(FirstCombo.class.getName());	
-	   logger.info("ccc");	
+		ArrayList<Integer> list = new ArrayList<Integer>(3);
+		list.set(2,1);
+		System.out.println(list.size());
 	}
 }
  

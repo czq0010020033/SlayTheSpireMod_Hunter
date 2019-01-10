@@ -62,18 +62,18 @@ public class ByrdPet extends Pet {
 	public static final String GROUND_STATE = "GROUNDED";
 
 	public ByrdPet(int mana, float x) {
-		this(mana, x, 0);
+		this(x, 0);
 	}
 
-	public ByrdPet(int mana, float x, float y) {
+	public ByrdPet(float x, float y) {
 		super(NAME, "ByrdPet", 10, 0.0F, 50.0F, 240.0F, 180.0F, null, x, y);
-		this.drawX = (Settings.WIDTH * x);
-		this.drawY = AbstractDungeon.floorY - 20F * Settings.scale;
+		this.drawX = x;
+		this.drawY = y;
 
 		setHp(10, 10);
 		this.flightAmt = 1;
 		this.peckDmg = 3;
-		this.peckCount = 3;
+		this.peckCount = 2;
 		this.swoopDmg = 10;
 		this.damage.add(new DamageInfo(this, this.peckDmg));
 		this.damage.add(new DamageInfo(this, this.swoopDmg));
@@ -86,7 +86,7 @@ public class ByrdPet extends Pet {
 		e.setTime(e.getEndTime() * MathUtils.random());
 	}
 
-	public void afterSpawn() {
+	public void beforeSpawn() {
 
 		this.addPower(new FlightPower(this, this.flightAmt));
 		
@@ -211,9 +211,9 @@ public class ByrdPet extends Pet {
 	}
 
 	public void applySpirit(int amount) {
-		if (this.peckCount == 3 + amount)
+		if (this.peckCount == 2 + amount)
 			return;
-		this.peckCount = 3 + amount;
+		this.peckCount = 2 + amount;
 		// if(this.nextMove == (byte) 10){
 		if (this.isFlying)
 		{

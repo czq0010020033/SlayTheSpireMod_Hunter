@@ -52,7 +52,7 @@ public class CultistForm
   
   public void use(AbstractPlayer p, AbstractMonster m)
   {
-	  AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new RitualPower(p, magicNumber)));
+	  AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new RitualPower(p, magicNumber), magicNumber));
 	/*  if(p instanceof Giant)
 	  {
 		  ((Giant) p).changeState(Giant.BeastStatus.BIRD);

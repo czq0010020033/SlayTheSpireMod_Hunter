@@ -52,13 +52,7 @@ public class DamageAllEnemiesActionPatch {
 
 		boolean playedMusic;
 		if (firstFrame) {
-			try {
-				logger.info("first time firstFrame :" + firstFrame
-						+ ", this.firstFrame: "
-						+ (boolean) cardField.get(action));
-			} catch (IllegalArgumentException | IllegalAccessException e1) {
-				e1.printStackTrace();
-			}
+
 			playedMusic = false;
 			int temp = AbstractDungeon.getCurrRoom().monsters.monsters.size();
 			for (int i = 0; i < temp; i++) {
@@ -99,8 +93,7 @@ public class DamageAllEnemiesActionPatch {
 			}
 			try {
 				cardField.set(action, false);
-				logger.info("firstFrame :" + firstFrame + ", this.firstFrame: "
-						+ (boolean) cardField.get(action));
+
 			} catch (IllegalArgumentException | IllegalAccessException e) {
 				e.printStackTrace();
 			}
@@ -120,45 +113,43 @@ public class DamageAllEnemiesActionPatch {
 			e.printStackTrace();
 		}
 		if (action.isDone) {
-			logger.info("action.isDone .");
 
 			for (AbstractPower p : AbstractDungeon.player.powers) {
 				p.onDamageAllEnemies(action.damage);
 			}
 			int temp = AbstractDungeon.getCurrRoom().monsters.monsters.size();
-			if (temp != action.damage.length) {
-				logger.info("出现异常，怪物数量：" + temp + ", 伤害数量: "
-						+ action.damage.length);
-			} else {
-				for (int i = 0; i < temp; i++) {
-					if (!((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
-							.get(i)).isDeadOrEscaped()
-							&& (!(((AbstractMonster) AbstractDungeon
-									.getCurrRoom().monsters.monsters.get(i)) instanceof Pet))) {
-						if (action.attackEffect == AbstractGameAction.AttackEffect.POISON) {
-							((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
-									.get(i)).tint.color = Color.CHARTREUSE
-									.cpy();
-							((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
-									.get(i)).tint
-									.changeColor(Color.WHITE.cpy());
-						} else if (action.attackEffect == AbstractGameAction.AttackEffect.FIRE) {
-							((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
-									.get(i)).tint.color = Color.RED.cpy();
-							((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
-									.get(i)).tint
-									.changeColor(Color.WHITE.cpy());
-						}
+
+			for (int i = 0; i < temp; i++) {
+				if (!((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
+						.get(i)).isDeadOrEscaped()
+						&& (!(((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
+								.get(i)) instanceof Pet))) {
+					if (action.attackEffect == AbstractGameAction.AttackEffect.POISON) {
+						((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
+								.get(i)).tint.color = Color.CHARTREUSE.cpy();
+						((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
+								.get(i)).tint.changeColor(Color.WHITE.cpy());
+					} else if (action.attackEffect == AbstractGameAction.AttackEffect.FIRE) {
+						((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
+								.get(i)).tint.color = Color.RED.cpy();
+						((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
+								.get(i)).tint.changeColor(Color.WHITE.cpy());
+					}
+					if (i >= action.damage.length) {
+						logger.info("出现异常，怪物数量：" + temp + ", 伤害数量: "
+								+ action.damage.length);
 						((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
 								.get(i)).damage(new DamageInfo(action.source,
-								action.damage[i], action.damageType));
+								action.damage[action.damage.length - 1], action.damageType));
+					} else {
+					((AbstractMonster) AbstractDungeon.getCurrRoom().monsters.monsters
+							.get(i)).damage(new DamageInfo(action.source,
+							action.damage[i], action.damageType));
 					}
-					logger.info("action.isDone . mid" + ", size: " + temp
-							+ ",action.damage.length:" +
-
-							action.damage.length + ",i:" + i);
 				}
+
 			}
+
 			if (AbstractDungeon.getCurrRoom().monsters
 					.areMonstersBasicallyDead()) {
 				AbstractDungeon.actionManager.clearPostCombatActions();
@@ -166,7 +157,6 @@ public class DamageAllEnemiesActionPatch {
 			if (!Settings.FAST_MODE) {
 				AbstractDungeon.actionManager.addToTop(new WaitAction(0.1F));
 			}
-			logger.info("action.isDone . last");
 		}
 	}
 }

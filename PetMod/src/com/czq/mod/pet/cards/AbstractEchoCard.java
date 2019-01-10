@@ -44,8 +44,12 @@ public abstract class AbstractEchoCard extends AbstractModCard {
 		c.exhaust = true;
 		c.isEthereal = true;
 		AbstractCard temp = CardLibrary.getCard(c.cardID).makeCopy();
+	
 		c.cost =temp.cost;
+		if(c.cost == 0)
+			c.cost = 1;
 		c.costForTurn = c.cost;
+		 c.freeToPlayOnce = false;
 		c.isCostModified = false;
 		c.isCostModifiedForTurn = false;
 		AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(

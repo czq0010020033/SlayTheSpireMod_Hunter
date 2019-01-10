@@ -43,5 +43,6 @@ public class BeastMasterPower
   {
     flash();
     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new GiantSpiritPower(this.owner, this.amount), this.amount));
+    
   }
 }

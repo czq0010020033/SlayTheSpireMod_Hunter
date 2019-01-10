@@ -28,7 +28,7 @@ public class EchoAttack extends AbstractEchoCard {
 				AbstractCard.CardType.ATTACK, AbstractCard.CardColor.BLUE,
 				AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
 
-		this.baseDamage = 13;
+		this.baseDamage = 12;
 	}
 
 	public void use(AbstractPlayer p, AbstractMonster m) {

@@ -8,6 +8,7 @@ import basemod.BaseMod;
 import com.czq.mod.pet.cards.attack.BloodAttack;
 import com.czq.mod.pet.cards.attack.ComboConnect;
 import com.czq.mod.pet.cards.attack.ComboRecycle;
+import com.czq.mod.pet.cards.attack.CooperationAttack;
 import com.czq.mod.pet.cards.attack.EagleFirst;
 import com.czq.mod.pet.cards.attack.EagleSecond;
 import com.czq.mod.pet.cards.attack.EagleThird;
@@ -104,6 +105,8 @@ public class ModCardHelper {
 		UnlockTracker.unlockCard(TheEndGiant.ID);
 		BaseMod.addCard(new StruggleAttack());
 		UnlockTracker.unlockCard(StruggleAttack.ID);
+	//	BaseMod.addCard(new CooperationAttack());
+//		UnlockTracker.unlockCard(CooperationAttack.ID);
 		//power card
 		BaseMod.addCard(new RetainCombo());
 		UnlockTracker.unlockCard(RetainCombo.ID);

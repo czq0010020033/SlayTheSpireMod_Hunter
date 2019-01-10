@@ -2,8 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="E:/QQDownload/Slay.The.Spire.v20181220/mods/BaseMod.jar"/>
-	<classpathentry kind="lib" path="E:/QQDownload/Slay.The.Spire.v20181220/ModTheSpire.jar"/>
-	<classpathentry kind="lib" path="E:/QQDownload/Slay.The.Spire.v20181220/desktop-1.0.jar"/>
+	<classpathentry kind="lib" path="E:/QQDownload/Slay.The.Spire.v20181220_eng/ModTheSpire.jar"/>
+	<classpathentry kind="lib" path="E:/QQDownload/Slay.The.Spire.v20181220_eng/mods/BaseMod.jar"/>
+	<classpathentry kind="lib" path="J:/Program Files (x86)/SteamLibrary/steamapps/common/SlayTheSpire/desktop-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

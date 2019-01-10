@@ -16,6 +16,13 @@
       "Start each combat with #b",
       " #ySpirit."
     ]
+  },
+  "SummonerMedal": {
+    "NAME": "Summoner Medal",
+    "FLAVOR": "It proves your are a qualified Summoner.",
+    "DESCRIPTIONS": [
+      "You can summon at most #b3 minions now."
+    ]
   }
   
  }

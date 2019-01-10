@@ -23,8 +23,8 @@ public class GremlinTsunderePetCall
     //super("CultistPetCall", NAME, "colorless/skill/finesse", "colorless/skill/finesse", 1, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.COLORLESS, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.NONE, 0);
     super(ID, NAME, DESCRIPTION, 2, CardColor.COLORLESS, CardRarity.UNCOMMON);
    // this.baseBlock = 5;
-    this.exhaust = false;
-    this.baseMagicNumber = 4;
+    this.exhaust = true;
+    this.baseMagicNumber = 3;
     this.magicNumber = this.baseMagicNumber;
   }
   

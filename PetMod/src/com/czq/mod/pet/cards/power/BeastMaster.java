@@ -24,7 +24,7 @@ public class BeastMaster
   {
     super(ID, NAME, "red/power/demon_form", COST, DESCRIPTION, AbstractCard.CardType.POWER, AbstractCard.CardColor.RED, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.NONE);
     
-    this.baseMagicNumber = 2;
+    this.baseMagicNumber = 1;
     this.magicNumber = this.baseMagicNumber;
   }
   

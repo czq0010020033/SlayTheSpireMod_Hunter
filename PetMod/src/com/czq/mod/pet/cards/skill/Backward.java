@@ -30,7 +30,7 @@ public class Backward
   {
     super(ID, NAME, "red/skill/defend", COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.RED, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, LEVEL);
     
-    this.baseBlock = 10;
+    this.baseBlock = 9;
     this.baseMagicNumber = 10;
     this.magicNumber = this.baseMagicNumber;
   }

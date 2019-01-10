@@ -9,9 +9,9 @@
     "DESCRIPTION": "Call a Champ. NL Exhaust."
   },
    "CultistPetCall": {
-    "NAME": "异教徒",
-    "DESCRIPTION": "召唤有 6 点攻击的 异教徒 ，持续 !M! 回合。",
-    "UPGRADE_DESCRIPTION": "召唤有 8 点攻击的 异教徒  ，持续 !M! 回合。"
+    "NAME": "邪教徒",
+    "DESCRIPTION": "召唤有 4 点攻击的 邪教徒 ，持续 !M! 回合。",
+    "UPGRADE_DESCRIPTION": "召唤有 6 点攻击的 邪教徒  ，持续 !M! 回合。"
   },
    "DonuPetCall": {
     "NAME": "Donu Call",
@@ -22,19 +22,20 @@
     "DESCRIPTION": "Call a GremlinFat. NL Exhaust."
   },
    "GremlinNobPetCall": {
-    "NAME": "GremlinNob Call",
-    "DESCRIPTION": "Call a GremlinNob. NL Exhaust."
+    "NAME": "地精大块头",
+    "DESCRIPTION": "召唤有 4 点攻击的 地精大块头 ，持续 !M! 回合。 NL 消耗 。",
+     "UPGRADE_DESCRIPTION": "召唤有 6 点攻击的 地精大块头 ，持续 !M! 回合。 NL 消耗 。"
   },
    "GremlinTsunderePetCall": {
     "NAME": "持盾地精",
-    "DESCRIPTION": "召唤会给 8 点 格挡 的 持盾地精 ，持续 !M! 回合 。",
-    "UPGRADE_DESCRIPTION": "召唤会给 10 点 护甲 并附带一个随机 亡语 的  持盾地精 ，持续 !M! 回合 。"
+    "DESCRIPTION": "召唤会给 6 点 格挡 的 持盾地精 ，持续 !M! 回合 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "召唤会给 6 点 护甲 并附带一个随机 亡语 的  持盾地精 ，持续 !M! 回合 。 NL 消耗 。"
   }
   ,
    "HealerPetCall": {
     "NAME": "牧师",
-     "DESCRIPTION": "召唤会回复 6 点生命的 牧师 ，持续 !M! 回合 。",
-    "UPGRADE_DESCRIPTION": "召唤会回复 8 点生命并附带一个随机 亡语 的  牧师 ，持续 !M! 回合 。"
+     "DESCRIPTION": "召唤会回复 6 点生命的 牧师 ，持续 !M! 回合 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "召唤会回复 6 点生命并附带一个随机 亡语 的  牧师 ，持续 !M! 回合 。  NL 消耗 。"
   }
   ,
    "PetCapture": {
@@ -250,7 +251,7 @@
       " NL 虚无 。 NL 消耗 。"]
   },
    "Echo Attack": {
-    "NAME": "预备打击",
+    "NAME": "猛攻",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 回响 。",
      "EXTENDED_DESCRIPTION": [
       " NL 虚无 。 NL 消耗 。"]
@@ -273,13 +274,13 @@
   },
   "Fanatic Cultist": {
     "NAME": "狂热",
-    "DESCRIPTION": "你的 异教徒 们获得 !M! 点力量 但是 减少 2 点 灵力 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "你的 异教徒 们获得 !M! 点力量 但是 减少 2 点 灵力 。"
+    "DESCRIPTION": "你的 邪教徒 们获得 !M! 点力量 但是 减少 2 点 灵力 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "你的 邪教徒 们获得 !M! 点力量 但是 减少 2 点 灵力 。"
   },
   "Seek Pet": {
     "NAME": "随从 检索",
     "DESCRIPTION": "从你的抽牌堆选择一张 随从 牌放入你的手牌。  NL 消耗 。",
-    "UPGRADE_DESCRIPTION": " 固有。 NL 从你的抽牌堆选择一张 随从 牌放入你的手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 固有。 NL 从你的抽牌堆选择两张 随从 牌放入你的手牌。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "你的抽牌堆中没有 随从 牌。"
     ]
@@ -305,5 +306,14 @@
     "NAME": "鲜血风暴",
     "DESCRIPTION": "丢弃所有手牌。 NL 每丢弃一张牌，在你的手牌中增加一张 嗜血打击 。",
     "UPGRADE_DESCRIPTION": "丢弃所有手牌。 NL 每丢弃一张牌，在你的手牌中增加一张已 升级 的 嗜血打击 。"
+  },
+  "Cooperation Attack": {
+    "NAME": "齐心协力",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你拥有 随从 ，则给予  !M! 层 虚弱 和 易伤 。"
+  },
+   "DefectPetCall": {
+    "NAME": "破损机器人",
+    "DESCRIPTION": "召唤会给 6 点全体伤害的 机器人 ，持续 !M! 回合 。",
+    "UPGRADE_DESCRIPTION": "召唤会给 8 点全体伤害的 机器人 ，持续 !M! 回合 。"
   }
 }

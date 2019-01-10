@@ -7,7 +7,15 @@
       " NL Ethereal.",
       " Innate. NL ",
       " NL Available.",
-      " NL You can only have two minions!"
+      " NL You can only have three minions!",
+      "This minion intends to give player #b",
+      " #yBlock on its turn.",
+      "This minion intends to heal player #b",
+      " #yHP on its turn.",
+      "The defect intends to lighting.It will deal #b",
+      " damage to all enemies.",
+      "The defect intends to lighting.It will deal #b",
+      " damage to you!"
     ]
   },
   "ComboFromDeckToHandAction": {
@@ -15,7 +23,7 @@
       "Choose a Combo to Add to Your Hand."
     ]
   },
-  "Choose a Minion to Add to Your Hand.": {
+  "PetFromDeckToHandAction": {
     "TEXT": [
       "Choose a Minion to Add to Your Hand."
     ]

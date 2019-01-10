@@ -30,7 +30,7 @@ public class ManaGrowth
   {
     super(ID, NAME, "red/skill/secondwind", "red/skill/secondWind", COST, DESCRIPTION, AbstractCard.CardType.SKILL,  AbstractCardEnum.GIANT_COLOR, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.NONE);
     this.baseBlock = 12;
-    this.baseMagicNumber = 3;
+    this.baseMagicNumber = 2;
     this.magicNumber = this.baseMagicNumber;
   }
   

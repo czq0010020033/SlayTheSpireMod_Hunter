@@ -4,6 +4,7 @@ import com.czq.mod.pet.cards.AbstractComboCard;
 import com.czq.mod.pet.cards.AbstractModCard;
 import com.czq.mod.pet.helpers.StringConstant;
 import com.czq.mod.pet.powers.EaglePower;
+import com.czq.mod.pet.powers.UnlimitedComboPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -15,10 +16,11 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.BlurPower;
 
 public class MeditateGiant
-  extends AbstractComboDefendCard
+  extends AbstractComboCard
 {
   public static final String ID = "Meditate Giant";
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -65,19 +67,17 @@ public class MeditateGiant
     }
   }
 
-	@Override
-	public void applyPowers() {
-		applyCombo();
 
-		super.applyPowers();
-
-		/*
-		 * for (AbstractPower p : AbstractDungeon.player.powers) { if (p
-		 * instanceof EaglePower) { ((EaglePower) p).isCombo = false; } }
-		 */
-	}
 	public void applyCombo() {
-		super.applyCombo();
+		boolean combo = false;
+		for (AbstractPower p : AbstractDungeon.player.powers) {
+			if ((p instanceof EaglePower && p.amount == level - 1)
+					|| (p instanceof UnlimitedComboPower)) {
+				combo = true;
+				break;
+			}
+		}
+		this.combo = combo;
 		if(this.combo){
 			if(this.upgraded)
 				 this.rawDescription = UPGRADE_DESCRIPTION + StringConstant.Available;
@@ -96,7 +96,16 @@ public class MeditateGiant
 	
 	@Override
 	public void calculateCardDamage(AbstractMonster mo) {
+		applyCombo();
 		super.calculateCardDamage(mo);
 	}
+
+	@Override
+	public void applyPowers() {
+		applyCombo();
+		super.applyPowers();
+	}
+
+	
 
 }

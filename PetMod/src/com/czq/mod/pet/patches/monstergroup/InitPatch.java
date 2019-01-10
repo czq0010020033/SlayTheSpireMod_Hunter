@@ -1,7 +1,7 @@
 /**      
  * 项目名称：PetMod<br> 
  */    
-package com.czq.mod.pet.patches.monstergroup;
+/*package com.czq.mod.pet.patches.monstergroup;
 
 import com.czq.mod.pet.helpers.GiantModHelper;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.monsters.MonsterGroup;
  * 修改时间：2018年12月29日/下午4:51:33<br>    
  * 修改备注：<br>
  * 版本：1.0
- */
+ *
 @SpirePatch(cls="com.megacrit.cardcrawl.monsters.MonsterGroup", method="init")
 public class InitPatch {
 	@SpirePrefixPatch
@@ -24,3 +24,4 @@ public class InitPatch {
 		 GiantModHelper.pets.clear();
 	}
 }
+*/

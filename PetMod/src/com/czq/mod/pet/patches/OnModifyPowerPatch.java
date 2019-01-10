@@ -4,6 +4,7 @@
 package com.czq.mod.pet.patches;
 
 import com.czq.mod.pet.helpers.GiantModHelper;
+import com.czq.mod.pet.helpers.PetHelper;
 import com.czq.mod.pet.monsters.pets.Pet;
 import com.czq.mod.pet.powers.GiantSpiritPower;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
@@ -26,6 +27,8 @@ public class OnModifyPowerPatch {
 	@SpirePostfixPatch
 	public static void Postfix() {
 		for (AbstractMonster pet : GiantModHelper.pets) {
+			if(!PetHelper.isAlive(pet))
+				continue;
 			if (AbstractDungeon.player.hasPower(GiantSpiritPower.POWER_ID))
 				((Pet) pet).applySpirit(AbstractDungeon.player
 						.getPower(GiantSpiritPower.POWER_ID).amount);

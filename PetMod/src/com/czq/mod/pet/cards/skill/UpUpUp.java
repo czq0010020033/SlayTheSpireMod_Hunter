@@ -28,7 +28,7 @@ public class UpUpUp
   public UpUpUp()
   {
     super(ID, NAME, "red/skill/secondwind", "red/skill/secondWind", COST, DESCRIPTION, AbstractCard.CardType.SKILL,  AbstractCardEnum.GIANT_COLOR, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
-    this.baseMagicNumber = 2;
+    this.baseMagicNumber = 1;
     this.magicNumber =  this.baseMagicNumber;
     this.exhaust = true;
   }

@@ -53,15 +53,19 @@ public class CultistPet extends Pet {
 	private boolean talky = true;
 	protected boolean flipHorizontal = true;
 
-	public CultistPet(int mana, float x) {
-		this(mana, x, 0, true);
+	public CultistPet(float x) {
+		this(x, 0, true);
 	}
 
-	public CultistPet(int mana, float x, float y, boolean talk) {
+	public CultistPet(float x, float y) {
+		this(x, y, true);
+	}
+
+	public CultistPet(float x, float y, boolean talk) {
 		super(NAME, "CultistPet", 10, -8.0F, 10.0F, 230.0F * 2F / 3F,
 				240.0F * 2F / 3F, null, x, y);
-		this.drawX = (Settings.WIDTH * x);
-		this.drawY = AbstractDungeon.floorY - 20F * Settings.scale;
+		this.drawX = x;
+		this.drawY = y;
 		if (AbstractDungeon.ascensionLevel >= 7) {
 			setHp(10, 10);
 		} else {
@@ -74,7 +78,7 @@ public class CultistPet extends Pet {
 		} else {
 			this.ritualAmount = 1;
 		}
-		this.damage.add(new DamageInfo(this, 6));
+		this.damage.add(new DamageInfo(this, 4));
 		this.peckCount = 1;
 		this.talky = talk;
 		if (Settings.FAST_MODE) {
@@ -90,8 +94,12 @@ public class CultistPet extends Pet {
 	}
 
 	@Override
-	public void afterSpawn() {
+	public void beforeSpawn() {
 		this.addPower(new RitualPower(this, this.ritualAmount));
+	}
+
+	public void onSpawn(){
+	 playSfx();
 	}
 
 	public void takeTurn() {
@@ -185,14 +193,14 @@ public class CultistPet extends Pet {
 
 	public void applySpirit(int amount) {
 		int temp = 0;
-		if(this.hasPower(RitualPower.POWER_ID))
-		{
+		if (this.hasPower(RitualPower.POWER_ID)) {
 			temp = this.getPower(RitualPower.POWER_ID).amount;
-			if(amount == temp - 1)
+			if (amount == temp - 1)
 				return;
-			 this.getPower(RitualPower.POWER_ID).amount = amount + 1;
-		//	this.addPower(new RitualPower(this, amount + 1),amount - temp + 1);
+			this.getPower(RitualPower.POWER_ID).amount = amount + 1;
+			// this.addPower(new RitualPower(this, amount + 1),amount - temp +
+			// 1);
 		}
-			
+
 	}
 }

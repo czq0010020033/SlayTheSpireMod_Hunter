@@ -35,14 +35,14 @@ public class KeywordHelper {
 				new String[] { "熟练" },
 				"熟练 可以提高随从的能力。");
 		BaseMod.addKeyword(
-				new String[] { "异教徒" },
-				"异教徒每回合会涨一定的力量，每一点熟练 可以提高异教徒一点仪式能力。");
+				new String[] { "邪教徒" },
+				"邪教徒每回合会涨一定的力量，每一点熟练 可以提高邪教徒一点仪式能力。");
 		BaseMod.addKeyword(
 				new String[] { "牧师" },
-				"牧师行动时可以回复所有友方 生命，每一点熟练 可以额外提高 3 点生命。");
+				"牧师行动时可以回复人物的生命，每一点熟练 可以额外提高 2 点生命。");
 		BaseMod.addKeyword(
 				new String[] { "持盾地精" },
-				"持盾地精行动时可以给人物添加 格挡，每一点熟练 可以额外提高 4 点格挡。");
+				"持盾地精行动时可以给人物添加 格挡，每一点熟练 可以额外提高 3 点格挡。");
 		BaseMod.addKeyword(
 				new String[] { "异鸟" },
 				"异鸟拥有多次攻击次数，每一点熟练 可以提高异鸟 一次出手次数。");
@@ -57,7 +57,7 @@ public class KeywordHelper {
 				"灵力代表随从的存活回合数，灵力每回合减一，当为0时，随从死亡。");
 		BaseMod.addKeyword(
 				new String[] { "随从" },
-				"你最多只能召唤两个随从，当拥有两个随从时，再召唤时左边的随从会被替代。");
+				"你最多只能召唤三个随从，当拥有三个随从时，再召唤时左边的随从会被替代。敌人的群体BUFF随从也会享受。");
 		BaseMod.addKeyword(
 				new String[] { "爆炸" },
 				"随从死亡时对所有敌人造成获得该亡语时最大生命值的伤害。");
@@ -94,10 +94,10 @@ public class KeywordHelper {
 					"Cultist can increase Strength each turn.  1 spirit can increase 1 this capacity.");
 			BaseMod.addKeyword(
 					new String[] { "healer" },
-					"Healer can heal your HP. 1 spirit can increase 3 heal amount.");
+					"Healer can heal your HP. 1 spirit can increase 2 heal amount.");
 			BaseMod.addKeyword(
 					new String[] { "gremlintsundere" },
-					"GremlinTsundere can give you block. 1 spirit can increase 4 block amount.");
+					"GremlinTsundere can give you block. 1 spirit can increase 3 block amount.");
 			BaseMod.addKeyword(
 					new String[] { "byrd" },
 					"Byrd attack multiple times. 1 spirit can increase 1 time.");
@@ -109,7 +109,7 @@ public class KeywordHelper {
 					" Minion will die when mana is 0. At the end of each turn, mana decrease 1.");
 			BaseMod.addKeyword(
 					new String[] { "minion","minions" },
-					"You can only summon 2 minions. when you have 2 minions, next minion will replace the left minion.");
+					"You can only summon 3 minions. when you have 3 minions, next minion will replace the left minion.");
 			BaseMod.addKeyword(
 					new String[] { "explode" },
 					"When this minion die, it will deal the minion's max HP(the number is when minion receive this deathrattle) to all enimies.");

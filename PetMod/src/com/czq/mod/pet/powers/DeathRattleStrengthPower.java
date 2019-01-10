@@ -52,7 +52,7 @@ public class DeathRattleStrengthPower extends AbstractPower {
 		AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
 				AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, amount), amount));
 		for(AbstractMonster pet : GiantModHelper.pets){
-			if(pet != this.owner && PetHelper.isAlive(pet)){
+			if( PetHelper.isAlive(pet) && pet != this.owner ){
 				AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
 						pet, pet, new StrengthPower(pet, amount), amount));
 			}

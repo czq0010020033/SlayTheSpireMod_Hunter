@@ -1,11 +1,18 @@
 package com.czq.mod.pet.monsters.pets;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Interpolation;
+import com.czq.mod.pet.helpers.StringConstant;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.AnimateFastAttackAction;
 import com.megacrit.cardcrawl.actions.animations.AnimateSlowAttackAction;
@@ -14,16 +21,25 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.PowerTip;
+import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.AbstractMonster.Intent;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.vfx.BobEffect;
 
 public abstract class Pet extends AbstractMonster {
-
+	private static final Logger logger = LogManager.getLogger(Pet.class
+			.getName());
 	public static float LEFT_X = 0.13F;
 	public static float RIGHT_X = 0.38F;
 	protected int mana = 0;
 	public int peckDmg;
 	public int peckCount;
+	public int blockAmt = 0;
+	public int heal = 0;
+	public int passiveAmount = 0;
 
 	/**
 	 * <p>
@@ -105,25 +121,29 @@ public abstract class Pet extends AbstractMonster {
 	}
 
 	public void update() {
-		if (this.skeleton != null && !this.skeleton.getFlipX()) {
+		if (this.skeleton != null && !this.skeleton.getFlipX() && (!(this instanceof DefectPet))) {
 			this.skeleton.setFlipX(true);
 		}
-		if (!flipHorizontal)
+		if (!flipHorizontal  && (!(this instanceof DefectPet)))
 			flipHorizontal = true;
 		super.update();
 	}
 
 	public void render(SpriteBatch sb) {
-		if (this.skeleton != null && !this.skeleton.getFlipX()) {
+		if (this.skeleton != null && !this.skeleton.getFlipX()   && (!(this instanceof DefectPet))) {
 			this.skeleton.setFlipX(true);
 		}
-		if (!flipHorizontal)
+		if (!flipHorizontal  && (!(this instanceof DefectPet)))
 			flipHorizontal = true;
 		super.render(sb);
 	}
 
-	public void afterSpawn() {
+	public void beforeSpawn() {
 
+	}
+	
+	public void onSpawn(){
+		
 	}
 
 	public void takeTurn() {
@@ -172,17 +192,27 @@ public abstract class Pet extends AbstractMonster {
 
 	}
 
-	private void renderPowerIconsPatch(SpriteBatch sb, float x, float y) {
+	
+	public void changeTip(PowerTip tip){
+	
+	}
+	
+	public void renderAmount(SpriteBatch sb, BobEffect bob){
+		
+	}
+/*	private void renderPowerIconsPatch(SpriteBatch sb, float x, float y) {
+		logger.info("renderPowerIconsPatch");
 		Field hbTextColorField;
 		Field POWER_ICON_PADDING_XField;
 		Color hbTextColor = null;
 		float POWER_ICON_PADDING_X = 0;
 		try {
-			hbTextColorField = AbstractCreature.class.getDeclaredField("hbTextColor");
+			hbTextColorField = AbstractCreature.class
+					.getDeclaredField("hbTextColor");
 			hbTextColorField.setAccessible(true);
 			hbTextColor = (Color) hbTextColorField.get(this);
-			POWER_ICON_PADDING_XField =  AbstractCreature.class.getDeclaredField(
-					"POWER_ICON_PADDING_X");
+			POWER_ICON_PADDING_XField = AbstractCreature.class
+					.getDeclaredField("POWER_ICON_PADDING_X");
 			POWER_ICON_PADDING_XField.setAccessible(true);
 			POWER_ICON_PADDING_X = (float) POWER_ICON_PADDING_XField.get(this);
 		} catch (NoSuchFieldException | SecurityException
@@ -203,4 +233,48 @@ public abstract class Pet extends AbstractMonster {
 			offset += POWER_ICON_PADDING_X;
 		}
 	}
+
+
+*/
+	/*public void renderTip(final SpriteBatch sb) {
+		final ArrayList<PowerTip> tips = new ArrayList<PowerTip>();
+		if (this.intentAlphaTarget == 1.0f && this.intent != Intent.NONE) {
+
+			Field cardField = null;
+			PowerTip tip = null;
+			try {
+				cardField = AbstractMonster.class.getDeclaredField("intentTip");
+				cardField.setAccessible(true);
+				tips.add((PowerTip) cardField.get(this));
+			} catch (NoSuchFieldException | SecurityException
+					| IllegalArgumentException | IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+
+		}
+		for (final AbstractPower p : this.powers) {
+			if (p.region48 != null) {
+				tips.add(new PowerTip(p.name, p.description, p.region48));
+			} else {
+				tips.add(new PowerTip(p.name, p.description, p.img));
+			}
+		}
+		if (!tips.isEmpty()) {
+			final float offsetY = (tips.size() - 1)
+					* AbstractMonster.MULTI_TIP_Y_OFFSET
+					+ AbstractMonster.TIP_OFFSET_Y;
+			if (this.hb.cX + this.hb.width / 2.0f < AbstractMonster.TIP_X_THRESHOLD) {
+				TipHelper.queuePowerTips(this.hb.cX + this.hb.width / 2.0f
+						+ AbstractMonster.TIP_OFFSET_R_X, this.hb.cY + offsetY,
+						tips);
+			} else {
+				TipHelper.queuePowerTips(this.hb.cX - this.hb.width / 2.0f
+						+ AbstractMonster.TIP_OFFSET_L_X, this.hb.cY + offsetY,
+						tips);
+			}
+		}
+	}
+*/
+	
+	
 }

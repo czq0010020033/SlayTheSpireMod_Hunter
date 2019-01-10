@@ -183,7 +183,7 @@ public class Giant extends CustomPlayer {
 	}
 
 	public AbstractCard getStartCardForEvent() {
-		return new LeftHookFist();
+		return new EagleSecond();
 	}
 
 	public String getTitle(AbstractPlayer.PlayerClass playerClass) {
@@ -340,4 +340,16 @@ public class Giant extends CustomPlayer {
 	public String getVampireText() {
 		return com.megacrit.cardcrawl.events.city.Vampires.DESCRIPTIONS[0];
 	}
+	
+	/*public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool)
+	  {
+	    CardLibrary.addBlueCards(tmpPool);
+	    if (ModHelper.isModEnabled("Red Cards")) {
+	      CardLibrary.addRedCards(tmpPool);
+	    }
+	    if (ModHelper.isModEnabled("Green Cards")) {
+	      CardLibrary.addGreenCards(tmpPool);
+	    }
+	    return tmpPool;
+	  }*/
 }

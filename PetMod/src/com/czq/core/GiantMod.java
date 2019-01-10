@@ -26,9 +26,11 @@ import com.czq.mod.pet.characters.Giant;
 import com.czq.mod.pet.helpers.KeywordHelper;
 import com.czq.mod.pet.helpers.ModCardHelper;
 import com.czq.mod.pet.helpers.PetHelper;
+import com.czq.mod.pet.helpers.save.CustomSaveHunter;
 import com.czq.mod.pet.patches.ModClassEnum;
 import com.czq.mod.pet.relics.SoulBox;
 import com.czq.mod.pet.relics.SoulStone;
+import com.czq.mod.pet.relics.SummonerMedal;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -42,6 +44,7 @@ import com.megacrit.cardcrawl.core.Settings.GameLanguage;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
@@ -112,8 +115,7 @@ public class GiantMod implements PostExhaustSubscriber, PostBattleSubscriber,
 
 		BaseMod.addRelicToCustomPool(new SoulBox(), AbstractCardEnum.GIANT_COLOR);
 		BaseMod.addRelicToCustomPool(new SoulStone(), AbstractCardEnum.GIANT_COLOR);
-		
-
+	//	BaseMod.addRelicToCustomPool(new SummonerMedal(), AbstractCardEnum.GIANT_COLOR);
 		logger.info("Relics editting finished.");
 	}
 
@@ -134,6 +136,14 @@ public class GiantMod implements PostExhaustSubscriber, PostBattleSubscriber,
 
 	public static void initialize() {
 		new GiantMod();
+		
+		CustomSaveHunter save = new CustomSaveHunter();
+		if (!BaseMod.getSaveFields().containsKey("HunterSave")) {
+			BaseMod.addSaveField("HunterSave", save);
+			logger.info("add hutersave key...");
+		}
+		
+		
 		BaseMod.addColor(AbstractCardEnum.GIANT_COLOR, STARLIGHT, STARLIGHT,
 				STARLIGHT, STARLIGHT, STARLIGHT, STARLIGHT, STARLIGHT,
 				"images/cardui/512/bg_attack_red.png",
@@ -197,6 +207,10 @@ public class GiantMod implements PostExhaustSubscriber, PostBattleSubscriber,
 					.internal("localization/giant/zhs/ui.json").readString(
 							String.valueOf(StandardCharsets.UTF_8));
 			BaseMod.loadCustomStrings(UIStrings.class, uiStrings);
+			String monsterStrings = Gdx.files
+					.internal("localization/giant/zhs/monsters.json").readString(
+							String.valueOf(StandardCharsets.UTF_8));
+			BaseMod.loadCustomStrings(MonsterStrings.class, monsterStrings);
 			/*
 			 * String relicStrings =
 			 * Gdx.files.internal("localization/ThMod_Fnh_relics-zh.json"
@@ -230,6 +244,10 @@ public class GiantMod implements PostExhaustSubscriber, PostBattleSubscriber,
 					.internal("localization/giant/eng/ui.json").readString(
 							String.valueOf(StandardCharsets.UTF_8));
 			BaseMod.loadCustomStrings(UIStrings.class, uiStrings);
+			String monsterStrings = Gdx.files
+					.internal("localization/giant/eng/monsters.json").readString(
+							String.valueOf(StandardCharsets.UTF_8));
+			BaseMod.loadCustomStrings(MonsterStrings.class, monsterStrings);
 		}
 		logger.info("done editing strings");
 	}

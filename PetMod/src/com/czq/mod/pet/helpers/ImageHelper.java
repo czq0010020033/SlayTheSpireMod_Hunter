@@ -22,6 +22,7 @@ public class ImageHelper {
 	
 	public static final String CardPrefix = "images/giant/cards/";
 	private static final String PowerPrefix = "images/giant/powers/";
+	private static final String RelicPrefix = "images/giant/relics/";
 	public static String getCardImageUrl(String id, AbstractCard.CardType type){
 		String tmp = id.replace(" ", "");
 		StringBuilder str = new StringBuilder();
@@ -68,6 +69,12 @@ public class ImageHelper {
 		String tmp = id.replace(" ", "");
 		return PowerPrefix + tmp + ".png";
 	}
+	
+	public static String getRelicImageUrl(String id){
+		String tmp = id.replace(" ", "");
+		return RelicPrefix + tmp + ".png";
+	}
+	
 	
 	private static boolean fileExist(String path){
 		
