@@ -1,0 +1,14 @@
+{
+  "DefectPet": {
+    "MOVES": [
+      "Lighting"
+    ],
+    "NAME": "Defect",
+    "DIALOG": [
+      "Hey! I come to help you.",
+      "!~~~",
+      "Are you kidding me?!!",
+      "I will revenge!!!"
+    ]
+  }
+ }
