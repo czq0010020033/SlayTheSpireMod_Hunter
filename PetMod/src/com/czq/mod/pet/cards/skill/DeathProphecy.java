@@ -74,7 +74,6 @@ public class DeathProphecy
     if (!this.upgraded)
     {
       upgradeName();
-      upgradeBaseCost(0);
       this.target = CardTarget.NONE;
       this.rawDescription = UPGRADE_DESCRIPTION;
       initializeDescription();

@@ -69,7 +69,6 @@ public class RandomDeathRattle extends AbstractModCard {
 	public void upgrade() {
 		if (!this.upgraded) {
 			upgradeName();
-			upgradeBaseCost(0);
 		}
 	}
 }

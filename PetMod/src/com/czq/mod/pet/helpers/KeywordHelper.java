@@ -76,6 +76,15 @@ public class KeywordHelper {
 		BaseMod.addKeyword(
 				new String[] { "鲜血" },
 				"失去 1 点生命，造成 7 点伤害。将一张 鲜血 放入你的抽牌堆中。 消耗。");
+		BaseMod.addKeyword(
+				new String[] { "嘲讽" },
+				"敌人会优先攻击具有嘲讽的随从。");
+		BaseMod.addKeyword(
+				new String[] { "弓","弓箭" },
+				"武器，点击使用，每回合最多可以使用两次。 ");
+		BaseMod.addKeyword(
+				new String[] { "箭" },
+				"每次使用弓时消耗一把箭，没有箭时弓将不能使用。");
 		}else{
 			BaseMod.addKeyword(
 					new String[] {"combo" },
@@ -128,6 +137,18 @@ public class KeywordHelper {
 			BaseMod.addKeyword(
 					new String[] { "bloodattack" },
 					"0 Cost. Deal 7 damage. Lose 1 HP. Exhaust.");
+			BaseMod.addKeyword(
+					new String[] { "taunt" },
+					"Enemies will attack the tuant minion first.");
+			BaseMod.addKeyword(
+					new String[] { "bow" },
+					"Weapon. Click it to use. You can use it twice each turn.");
+			BaseMod.addKeyword(
+					new String[] { "arrow" },
+					"It will derease 1 when you use the Bow.");
+			BaseMod.addKeyword(
+					new String[] { "vampire" },
+					"When the Bow take damage.Heal HP equal the damage.");
 			
 		}
 	}

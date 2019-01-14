@@ -15,7 +15,9 @@
       "The defect intends to lighting.It will deal #b",
       " damage to all enemies.",
       "The defect intends to lighting.It will deal #b",
-      " damage to you!"
+      " damage to you!",
+      "The Spiker intends to increase #b",
+      " max HP in its turn."
     ]
   },
   "ComboFromDeckToHandAction": {
@@ -26,6 +28,14 @@
   "PetFromDeckToHandAction": {
     "TEXT": [
       "Choose a Minion to Add to Your Hand."
+    ]
+  },
+    "Weapon Giant": {
+    "TEXT": [
+      "Bow",
+      "Your Bow has #b",
+      " Arrows and #b",
+      " damage. You can use the Bow only twice in each turn."
     ]
   }
  }

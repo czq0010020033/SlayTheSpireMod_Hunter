@@ -13,6 +13,8 @@ import com.czq.mod.pet.monsters.pets.Pet;
 import com.czq.mod.pet.powers.DeathRattleExplodePower;
 import com.czq.mod.pet.powers.DeathRattleHealPower;
 import com.czq.mod.pet.powers.DeathRattleStrengthPower;
+import com.czq.mod.pet.weapon.Bow;
+import com.czq.mod.pet.weapon.Weapon;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
@@ -35,21 +37,18 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 public class GiantModHelper {
 
 	public static ArrayList<AbstractMonster> pets = new ArrayList<AbstractMonster>();
+	public static Weapon weapon = new Bow();
 
-/*	public static void addGiantCards(ArrayList<AbstractCard> tmpPool) {
-	//	logger.info("[INFO] Adding blue cards into card pool.");
-		AbstractCard card = null;
-		for (Map.Entry<String, AbstractCard> c : CardLibrary.cards.entrySet()) {
-			card = (AbstractCard) c.getValue();
-			if ((card.color == AbstractCardEnum.GIANT_COLOR)
-					&& (card.rarity != AbstractCard.CardRarity.BASIC)
-					&& ((!UnlockTracker.isCardLocked((String) c.getKey())) || (Settings
-							.treatEverythingAsUnlocked()))) {
-				tmpPool.add(card);
-			}
-		}
-	}
-*/
+	/*
+	 * public static void addGiantCards(ArrayList<AbstractCard> tmpPool) { //
+	 * logger.info("[INFO] Adding blue cards into card pool."); AbstractCard
+	 * card = null; for (Map.Entry<String, AbstractCard> c :
+	 * CardLibrary.cards.entrySet()) { card = (AbstractCard) c.getValue(); if
+	 * ((card.color == AbstractCardEnum.GIANT_COLOR) && (card.rarity !=
+	 * AbstractCard.CardRarity.BASIC) && ((!UnlockTracker.isCardLocked((String)
+	 * c.getKey())) || (Settings .treatEverythingAsUnlocked()))) {
+	 * tmpPool.add(card); } } }
+	 */
 	public static AbstractCard returnTrulyRandomComboCardInCombat() {
 		final ArrayList<AbstractCard> list = new ArrayList<AbstractCard>();
 		for (final AbstractCard c : AbstractDungeon.srcCommonCardPool.group) {
@@ -70,10 +69,10 @@ public class GiantModHelper {
 				list.add(c);
 			}
 		}
-		if (list.size() == 0)
-		{
+		if (list.size() == 0) {
 			AbstractCard card = null;
-			for (Map.Entry<String, AbstractCard> c : CardLibrary.cards.entrySet()) {
+			for (Map.Entry<String, AbstractCard> c : CardLibrary.cards
+					.entrySet()) {
 				card = (AbstractCard) c.getValue();
 				if ((card instanceof AbstractComboCard)
 						&& (card.rarity != AbstractCard.CardRarity.BASIC)
@@ -107,10 +106,10 @@ public class GiantModHelper {
 				list.add(c);
 			}
 		}
-		if (list.size() == 0)
-		{
+		if (list.size() == 0) {
 			AbstractCard card = null;
-			for (Map.Entry<String, AbstractCard> c : CardLibrary.cards.entrySet()) {
+			for (Map.Entry<String, AbstractCard> c : CardLibrary.cards
+					.entrySet()) {
 				card = (AbstractCard) c.getValue();
 				if ((card instanceof PetCall)
 						&& (card.rarity != AbstractCard.CardRarity.BASIC)
@@ -172,25 +171,32 @@ public class GiantModHelper {
 		}
 		return false;
 	}
-	
-	public static AbstractMonster getRandomTauntMinion(){
+
+	public static AbstractMonster getRandomTauntMinion() {
 		List<AbstractMonster> list = new ArrayList();
 		for (int i = 0; i < pets.size(); i++) {
-			if(PetHelper.isAlive(pets.get(i))){
+			if (PetHelper.isAlive(pets.get(i)) && isTaunt(pets.get(i))) {
 				list.add(pets.get(i));
 			}
 		}
-		if(list.size() > 0)
+		if (list.size() > 0)
 			return list.get(AbstractDungeon.aiRng.random(list.size() - 1));
-		else 
+		else
 			return null;
 	}
-	
-	public static boolean hasTauntMinion(){
+
+	public static boolean hasTauntMinion() {
 		for (int i = 0; i < pets.size(); i++) {
-			if(PetHelper.isAlive(pets.get(i))){
+			if (PetHelper.isAlive(pets.get(i)) && isTaunt(pets.get(i))) {
 				return true;
 			}
+		}
+		return false;
+	}
+
+	private static boolean isTaunt(AbstractMonster m) {
+		if ((m != null) && (m instanceof Pet) && (((Pet) m).taunt)) {
+			return true;
 		}
 		return false;
 	}

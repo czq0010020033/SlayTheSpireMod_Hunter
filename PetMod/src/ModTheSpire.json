@@ -5,8 +5,11 @@
     "陈镇钦"
   ],
   "description": "New Character.It can summon minions and also more new mechanisms. This is a origin version and will continue update in the future.
- 新角色，可以召唤随从，并且卡牌的机制不错，希望大家喜欢。这仅仅是 初版，后续内容会慢慢添加。",
-  "version": "0.1",
+ 新角色，可以召唤随从，并且卡牌的机制不错，希望大家喜欢。这仅仅是 初版，后续内容会慢慢添加。
+ 01-14-2019
+ update:add a new minion. add a weapon card.
+ 更新：添加了一个新随从，添加了一张武器卡。",
+  "version": "01-14-2019",
   "sts_version": "12-20-2018",
    "update_json":""
 }

@@ -8,7 +8,6 @@ import basemod.BaseMod;
 import com.czq.mod.pet.cards.attack.BloodAttack;
 import com.czq.mod.pet.cards.attack.ComboConnect;
 import com.czq.mod.pet.cards.attack.ComboRecycle;
-import com.czq.mod.pet.cards.attack.CooperationAttack;
 import com.czq.mod.pet.cards.attack.EagleFirst;
 import com.czq.mod.pet.cards.attack.EagleSecond;
 import com.czq.mod.pet.cards.attack.EagleThird;
@@ -20,6 +19,7 @@ import com.czq.mod.pet.cards.attack.StruggleAttack;
 import com.czq.mod.pet.cards.attack.TheEndGiant;
 import com.czq.mod.pet.cards.power.BeastMaster;
 import com.czq.mod.pet.cards.power.BloodyGiant;
+import com.czq.mod.pet.cards.power.Calmness;
 import com.czq.mod.pet.cards.power.ComboForm;
 import com.czq.mod.pet.cards.power.CultistForm;
 import com.czq.mod.pet.cards.power.InfiniteCombo;
@@ -56,6 +56,11 @@ import com.czq.mod.pet.cards.skill.SeekPet;
 import com.czq.mod.pet.cards.skill.StormOfBlood;
 import com.czq.mod.pet.cards.skill.UpUpUp;
 import com.czq.mod.pet.cards.status.BloodGiant;
+import com.czq.mod.pet.cards.weapon.HunterBow;
+import com.czq.mod.pet.cards.weapon.PoisonWeapon;
+import com.czq.mod.pet.cards.weapon.Quiver;
+import com.czq.mod.pet.cards.weapon.VampireWeapon;
+import com.czq.mod.pet.cards.weapon.WeaponUpgrade;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 /**
@@ -73,14 +78,14 @@ public class ModCardHelper {
 	public static void addCardToLibrary() {
 		PetHelper.addPetCardToLibrary();
 
-/*		BaseMod.addCard(new LeftHookFist());
-		UnlockTracker.unlockCard("LeftHookFist");
-		BaseMod.addCard(new RightHookFist());
-		UnlockTracker.unlockCard("RightHookFist");
-		BaseMod.addCard(new FinalFist());
-		UnlockTracker.unlockCard("FinalFist");
-*/
-		//attack
+		/*
+		 * BaseMod.addCard(new LeftHookFist());
+		 * UnlockTracker.unlockCard("LeftHookFist"); BaseMod.addCard(new
+		 * RightHookFist()); UnlockTracker.unlockCard("RightHookFist");
+		 * BaseMod.addCard(new FinalFist());
+		 * UnlockTracker.unlockCard("FinalFist");
+		 */
+		// attack
 		BaseMod.addCard(new EagleFirst());
 		UnlockTracker.unlockCard(EagleFirst.ID);
 		BaseMod.addCard(new EagleSecond());
@@ -105,9 +110,9 @@ public class ModCardHelper {
 		UnlockTracker.unlockCard(TheEndGiant.ID);
 		BaseMod.addCard(new StruggleAttack());
 		UnlockTracker.unlockCard(StruggleAttack.ID);
-	//	BaseMod.addCard(new CooperationAttack());
-//		UnlockTracker.unlockCard(CooperationAttack.ID);
-		//power card
+		// BaseMod.addCard(new CooperationAttack());
+		// UnlockTracker.unlockCard(CooperationAttack.ID);
+		// power card
 		BaseMod.addCard(new RetainCombo());
 		UnlockTracker.unlockCard(RetainCombo.ID);
 		BaseMod.addCard(new UnlimitedCombo());
@@ -132,7 +137,9 @@ public class ModCardHelper {
 		UnlockTracker.unlockCard(BloodyGiant.ID);
 		BaseMod.addCard(new RuptureGiant());
 		UnlockTracker.unlockCard(RuptureGiant.ID);
-		//skill
+		BaseMod.addCard(new Calmness());
+		UnlockTracker.unlockCard(Calmness.ID);
+		// skill
 		BaseMod.addCard(new HealWind());
 		UnlockTracker.unlockCard(HealWind.ID);
 		BaseMod.addCard(new Prayer());
@@ -149,8 +156,8 @@ public class ModCardHelper {
 		UnlockTracker.unlockCard(DiscoverPet.ID);
 		BaseMod.addCard(new UpUpUp());
 		UnlockTracker.unlockCard(UpUpUp.ID);
-	//	BaseMod.addCard(new DoubleHp());
-	//	UnlockTracker.unlockCard(DoubleHp.ID);
+		// BaseMod.addCard(new DoubleHp());
+		// UnlockTracker.unlockCard(DoubleHp.ID);
 		BaseMod.addCard(new DeathExplode());
 		UnlockTracker.unlockCard(DeathExplode.ID);
 		BaseMod.addCard(new RandomDeathRattle());
@@ -185,9 +192,19 @@ public class ModCardHelper {
 		UnlockTracker.unlockCard(MeditateGiant.ID);
 		BaseMod.addCard(new StormOfBlood());
 		UnlockTracker.unlockCard(StormOfBlood.ID);
-		//status
+		BaseMod.addCard(new PoisonWeapon());
+		UnlockTracker.unlockCard(PoisonWeapon.ID);
+		BaseMod.addCard(new Quiver());
+		UnlockTracker.unlockCard(Quiver.ID);
+		BaseMod.addCard(new HunterBow());
+		UnlockTracker.unlockCard(HunterBow.ID);
+		BaseMod.addCard(new VampireWeapon());
+		UnlockTracker.unlockCard(VampireWeapon.ID);
+		BaseMod.addCard(new WeaponUpgrade());
+		UnlockTracker.unlockCard(WeaponUpgrade.ID);
+		// status
 		BaseMod.addCard(new BloodGiant());
 		UnlockTracker.unlockCard(BloodGiant.ID);
-		
+
 	}
 }

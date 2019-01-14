@@ -154,8 +154,8 @@
   }, 
   "Double Mana": {
     "NAME": "Nourish",
-    "DESCRIPTION": "Triple the minion's health and Mana. NL Exhaust.",
-       "UPGRADE_DESCRIPTION": "Fivefold the minion's health and Mana. NL Exhaust."
+    "DESCRIPTION": "Double the minion's health and Mana. NL Exhaust.",
+       "UPGRADE_DESCRIPTION": "Triple the minion's health and Mana. NL Exhaust."
   }
   , 
   "Up Up Up": {
@@ -168,7 +168,7 @@
   } , 
   "Death Explode": {
     "NAME": "Death Explode",
-    "DESCRIPTION": "Decrease a Minions's Mana to 1 and give DeathRattle: Explode !M! times. NL Echo."
+    "DESCRIPTION": "Decrease a Minions's Mana to 1 and give DeathRattle: Explode !M! times."
   } , 
   "Sacrifice Summons": {
     "NAME": "Sacrifice Minions",
@@ -220,7 +220,7 @@
   "Death Prophecy": {
     "NAME": "Death Prophecy",
     "DESCRIPTION": "Trigger the DeathRattle.",
-    "UPGRADE_DESCRIPTION": "Trigger the DeathRattle."
+    "UPGRADE_DESCRIPTION": "Trigger all minions DeathRattle."
   }, 
   "Burning Pact Giant": {
     "NAME": "Overload",
@@ -234,7 +234,7 @@
   },
    "Beast Master": {
     "NAME": "Beast Master",
-    "DESCRIPTION": "At the start of your turn, gain !M! Spirit."
+    "DESCRIPTION": "At the start of your turn, lose !M! HP, gain !M! Spirit."
   },
     "Blood Giant": {
     "NAME": "Blood",
@@ -316,5 +316,37 @@
     "NAME": "Broken Defect",
     "DESCRIPTION": "Summon a Defect. NL It has 6 damages to all enemies and !M! Mana.",
     "UPGRADE_DESCRIPTION": "Summon a Defect. NL It has 8 damages to all enemies and !M! Mana."
+  },
+  "Poison Weapon": {
+    "NAME": "Poison",
+    "DESCRIPTION": "Your Bow gain !M! Poison."
+  },
+  
+  "Vampire Weapon": {
+    "NAME": "Vampire",
+    "DESCRIPTION": "Your Bow gain !M! Vampire."
+  },
+  "Quiver Giant": {
+    "NAME": "Quiver",
+    "DESCRIPTION": "Gain !M! Arrow. NL Gian !B! Block."
+  },
+   "SpikerPetCall": {
+    "NAME": "Spiker",
+    "DESCRIPTION": "Summon a Taunt Spiker. NL It has !M! Mana and 3 throns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Summon a Taunt Spiker with a random DeathRattle. NL It has !M! Mana and 3 throns. NL Exhaust."
+  },
+  "Hunter Bow": {
+    "NAME": "Bow",
+    "DESCRIPTION": "Equip a Bow with 2 Arrow and 4 damage. NL Add !M! Bow's relevant cards to your hand.",
+     "UPGRADE_DESCRIPTION": "Equip a Bow with 2 Arrow and 4 damage. NL Add !M! Bow's relevant and upgraded cards to your hand."
+    
+  },
+  "Weapon Upgrade": {
+    "NAME": "Upgrade",
+    "DESCRIPTION": "Increase !M! damage to the Bow. NL Add a same card into your draw pile. NL Exhaust."
+  },
+  "Calmness Giant": {
+    "NAME": "Calmness",
+    "DESCRIPTION": "Whenever you play a Skill and 0 cost card, draw !M! card."
   }
 }

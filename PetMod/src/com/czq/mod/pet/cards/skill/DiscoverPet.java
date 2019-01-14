@@ -24,11 +24,11 @@ public class DiscoverPet
   public static final String NAME = cardStrings.NAME;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-  private static final int COST = 1;
+  private static final int COST = 2;
   
   public DiscoverPet()
   {
-    super(ID, NAME, "colorless/skill/discovery", 1, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.COLORLESS, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
+    super(ID, NAME, "colorless/skill/discovery", COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.COLORLESS, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
     
     this.exhaust = true;
   }

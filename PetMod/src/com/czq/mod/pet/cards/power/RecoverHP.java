@@ -43,7 +43,7 @@ public class RecoverHP
     if (!this.upgraded)
     {
       upgradeName();
-      upgradeBaseCost(0);
+      upgradeBaseCost(1);
     }
   }
 }

@@ -15,6 +15,7 @@ import com.czq.mod.pet.cards.pet.DefectPetCall;
 import com.czq.mod.pet.cards.pet.GremlinNobPetCall;
 import com.czq.mod.pet.cards.pet.GremlinTsunderePetCall;
 import com.czq.mod.pet.cards.pet.HealerPetCall;
+import com.czq.mod.pet.cards.pet.SpikerPetCall;
 import com.czq.mod.pet.monsters.pets.ByrdPet;
 import com.czq.mod.pet.monsters.pets.CultistPet;
 import com.czq.mod.pet.monsters.pets.DefectPet;
@@ -22,40 +23,43 @@ import com.czq.mod.pet.monsters.pets.GremlinNobPet;
 import com.czq.mod.pet.monsters.pets.GremlinTsunderePet;
 import com.czq.mod.pet.monsters.pets.HealerPet;
 import com.czq.mod.pet.monsters.pets.Pet;
+import com.czq.mod.pet.monsters.pets.SpikerPet;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 public class PetHelper {
-	
+
 	public static HashSet<String> pets = new HashSet<String>();
 	public static HashSet<String> petCards = new HashSet<String>();
 	private static String petPrefix = "com.czq.mod.pet.monsters.pets.";
 	private static String cardPrefix = "com.czq.mod.pet.cards.pet.";
 	static {
 		pets.add(CultistPet.ID);
-//	pets.add(GremlinFatPet.ID);
+		// pets.add(GremlinFatPet.ID);
 		pets.add(GremlinNobPet.ID);
-//		pets.add(ChampPet.ID);
+		// pets.add(ChampPet.ID);
 		pets.add(ByrdPet.ID);
 		pets.add(GremlinTsunderePet.ID);
 		pets.add(HealerPet.ID);
-	
-//		pets.add(DonuPet.ID);
-//		pets.add(SneckoPet.ID);
+
+		// pets.add(DonuPet.ID);
+		// pets.add(SneckoPet.ID);
 		pets.add(DefectPet.ID);
-		
+		pets.add(SpikerPet.ID);
+
 		petCards.add(CultistPetCall.ID);
-	//	petCards.add(GremlinFatPetCall.ID);
+		// petCards.add(GremlinFatPetCall.ID);
 		petCards.add(GremlinNobPetCall.ID);
-	//	petCards.add(ChampPetCall.ID);
+		// petCards.add(ChampPetCall.ID);
 		petCards.add(ByrdPetCall.ID);
 		petCards.add(GremlinTsunderePetCall.ID);
 		petCards.add(HealerPetCall.ID);
-	//	petCards.add(DonuPetCall.ID);
-	//	petCards.add(SneckoPetCall.ID);
+		// petCards.add(DonuPetCall.ID);
+		// petCards.add(SneckoPetCall.ID);
 		petCards.add(DefectPetCall.ID);
+		petCards.add(SpikerPetCall.ID);
 	}
 
 	public static boolean isPet(String petID) {
@@ -114,14 +118,16 @@ public class PetHelper {
 
 	}
 
-	public static AbstractMonster getPetInstance(String petId, float pos_x, float pos_y) {
+	public static AbstractMonster getPetInstance(String petId, float pos_x,
+			float pos_y) {
 		if (petId == null || (!pets.contains(petId))) {
 			return null;
 		}
 
 		try {
 			Class clazz = Class.forName(petPrefix + petId);
-			Constructor constructor = clazz.getConstructor(float.class, float.class);
+			Constructor constructor = clazz.getConstructor(float.class,
+					float.class);
 			return (AbstractMonster) constructor.newInstance(pos_x, pos_y);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
@@ -153,52 +159,40 @@ public class PetHelper {
 			}
 		}
 
-	/*	if (!CardLibrary.cards.containsKey(PetCapture.ID)) {
-			CardLibrary.add(new PetCapture());
-			addCardToPool(new PetCapture());
-		}*/
+		/*
+		 * if (!CardLibrary.cards.containsKey(PetCapture.ID)) {
+		 * CardLibrary.add(new PetCapture()); addCardToPool(new PetCapture()); }
+		 */
 	}
 
 	public static void addCardToPool(AbstractCard c) {
 		if (c == null || (CardLibrary.cards.containsKey(c.cardID)))
 			return;
-		
-		   BaseMod.addCard(c);
-		   UnlockTracker.unlockCard(c.cardID);
-		/*
-		switch (c.rarity) {
-		case COMMON:
-			AbstractDungeon.commonCardPool.addToTop(c);
-			AbstractDungeon.srcCommonCardPool.addToTop(c);
-			break;
-		case UNCOMMON:
-			AbstractDungeon.uncommonCardPool.addToTop(c);
-			AbstractDungeon.srcUncommonCardPool.addToTop(c);
-			break;
-		case RARE:
-			AbstractDungeon.rareCardPool.addToTop(c);
-			AbstractDungeon.srcRareCardPool.addToTop(c);
-			break;
-		case CURSE:
-			AbstractDungeon.curseCardPool.addToTop(c);
-			AbstractDungeon.srcCurseCardPool.addToTop(c);
-			break;
-		default:
 
-			break;
-		}
-		*/
+		BaseMod.addCard(c);
+		UnlockTracker.unlockCard(c.cardID);
+		/*
+		 * switch (c.rarity) { case COMMON:
+		 * AbstractDungeon.commonCardPool.addToTop(c);
+		 * AbstractDungeon.srcCommonCardPool.addToTop(c); break; case UNCOMMON:
+		 * AbstractDungeon.uncommonCardPool.addToTop(c);
+		 * AbstractDungeon.srcUncommonCardPool.addToTop(c); break; case RARE:
+		 * AbstractDungeon.rareCardPool.addToTop(c);
+		 * AbstractDungeon.srcRareCardPool.addToTop(c); break; case CURSE:
+		 * AbstractDungeon.curseCardPool.addToTop(c);
+		 * AbstractDungeon.srcCurseCardPool.addToTop(c); break; default:
+		 * 
+		 * break; }
+		 */
 	}
-	
-	public static boolean isAlive(AbstractMonster pet){
-		if(pet == null || (!(pet instanceof Pet)))
+
+	public static boolean isAlive(AbstractMonster pet) {
+		if (pet == null || (!(pet instanceof Pet)))
 			return false;
-		Pet p = (Pet)pet;
-		if(p != null && (!p.isDead) && (!p.isDying) && (!p.isEscaping))
+		Pet p = (Pet) pet;
+		if (p != null && (!p.isDead) && (!p.isDying) && (!p.isEscaping))
 			return true;
 		return false;
 	}
 
-	
-	
 }

@@ -32,13 +32,13 @@ public class DoubleMana extends AbstractModCard {
 
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if(this.upgraded){
-			AbstractDungeon.actionManager.addToBottom(new DoubleManaAction(m, 4));
-			  AbstractDungeon.actionManager.addToBottom(new DoubleHpAction(m, 4));
+			AbstractDungeon.actionManager.addToBottom(new DoubleManaAction(m, 2));
+			  AbstractDungeon.actionManager.addToBottom(new DoubleHpAction(m, 2));
 		}
 		else
 		{
-		AbstractDungeon.actionManager.addToBottom(new DoubleManaAction(m, 2));
-		  AbstractDungeon.actionManager.addToBottom(new DoubleHpAction(m, 2));
+		AbstractDungeon.actionManager.addToBottom(new DoubleManaAction(m, 1));
+		  AbstractDungeon.actionManager.addToBottom(new DoubleHpAction(m, 1));
 		}
 	}
 

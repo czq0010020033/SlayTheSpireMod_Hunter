@@ -1,3 +1,9 @@
+package com.czq.mod.pet.patches.monster;
+
+import com.evacipated.cardcrawl.modthespire.lib.SpireField;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
 /**      
  * 项目名称：PetMod<br> 
  */
@@ -16,6 +22,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
  * 修改备注：<br>
  * 版本：1.0
  *
+ */
+@SpirePatch(cls = "com.megacrit.cardcrawl.monsters.AbstractMonster", method = "<class>")
 public class MonsterAddFieldsPatch {
 	public static SpireField<AbstractMonster> attack_target;
 	static {
@@ -23,4 +31,3 @@ public class MonsterAddFieldsPatch {
 				() -> null);
 	}
 }
-*/

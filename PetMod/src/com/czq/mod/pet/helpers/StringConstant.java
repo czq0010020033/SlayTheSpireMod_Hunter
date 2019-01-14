@@ -35,5 +35,6 @@ public class StringConstant {
 	  public static final String IntentLighting_2 = TEXT[12];
 	  public static final String IntentLighting_3 =   TEXT[13]; 
 	  public static final String IntentLighting_4 = TEXT[14];
-		  
+	  public static final String IntentMaxHP_1 = TEXT[15];
+	  public static final String IntentMaxHP_2 = TEXT[16];  
 }

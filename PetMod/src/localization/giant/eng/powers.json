@@ -77,7 +77,8 @@
   "BeastMaster": {
     "NAME": "Beast Master",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain #b",
+      "At the start of your turn, lose #b",
+      " HP, gain #b",
       " #ySpirit."
     ]
   },
@@ -102,6 +103,28 @@
     "NAME": "Retain combo",
     "DESCRIPTIONS": [
       "After the end of turn, your combo card will not discard."
+    ]
+  },
+  "Poison Weapon": {
+    "NAME": "Poison Weapon",
+    "DESCRIPTIONS": [
+      "Your weapon has #b",
+      " Poison. when you use weapon, it will apply poisons equal your weapon damage."
+    ]
+  },
+  "Vampire Weapon": {
+    "NAME": "Vampire Weapon",
+    "DESCRIPTIONS": [
+      "Your weapon has #b",
+      " Vampire. when you use weapon, it will heal your HP equal your weapon damage."
+    ]
+  },
+  "Calmness Power": {
+    "NAME": "Calmness",
+    "DESCRIPTIONS": [
+      "Whenever you play a #ySkill card, draw #b",
+      " card.",
+      " cards."
     ]
   }
   

@@ -29,7 +29,7 @@
    "GremlinTsunderePetCall": {
     "NAME": "持盾地精",
     "DESCRIPTION": "召唤会给 6 点 格挡 的 持盾地精 ，持续 !M! 回合 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "召唤会给 6 点 护甲 并附带一个随机 亡语 的  持盾地精 ，持续 !M! 回合 。 NL 消耗 。"
+    "UPGRADE_DESCRIPTION": "召唤会给 6 点 格挡 并附带一个随机 亡语 的  持盾地精 ，持续 !M! 回合 。 NL 消耗 。"
   }
   ,
    "HealerPetCall": {
@@ -153,8 +153,8 @@
   }, 
   "Double Mana": {
     "NAME": "滋养",
-    "DESCRIPTION": "将一个 随从  最大血量和 灵力  变为三倍。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "将一个 随从 最大血量和 灵力 变五倍。 NL 消耗 。"
+    "DESCRIPTION": "将一个 随从  最大血量和 灵力  翻倍。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将一个 随从 最大血量和 灵力 变为三倍。 NL 消耗 。"
   }
   , 
   "Up Up Up": {
@@ -167,7 +167,7 @@
   } , 
   "Death Explode": {
     "NAME": "爆炸",
-    "DESCRIPTION": "使一个随从灵力降为 1，并施放 亡语 ：!M!倍 爆炸 。 NL 回响 。"
+    "DESCRIPTION": "使一个随从灵力降为 1，并施放 亡语 ：!M!倍 爆炸 。"
   } , 
   "Sacrifice Summons": {
     "NAME": "牺牲",
@@ -233,7 +233,7 @@
   },
    "Beast Master": {
     "NAME": "兽王",
-    "DESCRIPTION": "每回合开始时， 获得 !M! 点 熟练 。"
+    "DESCRIPTION": "每回合开始时， 失去 !M! 点生命，获得 !M! 点 熟练 。"
   },
     "Blood Giant": {
     "NAME": "鲜血",
@@ -315,5 +315,35 @@
     "NAME": "破损机器人",
     "DESCRIPTION": "召唤会给 6 点全体伤害的 机器人 ，持续 !M! 回合 。",
     "UPGRADE_DESCRIPTION": "召唤会给 8 点全体伤害的 机器人 ，持续 !M! 回合 。"
+  },
+ "Poison Weapon": {
+    "NAME": "毒药",
+    "DESCRIPTION": "使你的 弓箭 获得 !M! 层毒。"
+  },
+   "Vampire Weapon": {
+    "NAME": "吸血",
+    "DESCRIPTION": "使你的 弓箭 获得 !M! 层 吸血 。"
+  },
+  "Quiver Giant": {
+    "NAME": "箭筒",
+    "DESCRIPTION": "获得 !M! 把 箭 。 NL 获得 !B! 点 格挡 。"
+  },
+   "SpikerPetCall": {
+    "NAME": "钉刺机",
+    "DESCRIPTION": "召唤拥有 3 点 荆棘 的 嘲讽 钉刺机 ，持续 !M! 回合 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "召唤会给 5 点 荆棘  并附带一个随机 亡语 的 嘲讽  钉刺机 ，持续 !M! 回合 。 NL 消耗 。"
+  },
+  "Hunter Bow": {
+    "NAME": "猎人弓",
+    "DESCRIPTION": "装备一把有 2 只 箭 和 4 点 攻击 的 弓 。 NL 添加 !M! 张相关卡牌到你的手牌中。",
+    "UPGRADE_DESCRIPTION": "装备一把有 2 只 箭 和 4 点 攻击 的 弓 。 NL 添加 !M! 张升级的相关卡牌到你的手牌中。"
+  },
+  "Weapon Upgrade": {
+    "NAME": "锻造",
+    "DESCRIPTION": "使你的 弓 增加 !M! 点伤害。 NL 添加一张相同卡牌到你的抽牌堆中。 NL 消耗 。"
+  },
+  "Calmness Giant": {
+    "NAME": "佯装镇定",
+    "DESCRIPTION": "每当你打出一张0费的 技能 牌时，抽 !M! 张牌。"
   }
 }

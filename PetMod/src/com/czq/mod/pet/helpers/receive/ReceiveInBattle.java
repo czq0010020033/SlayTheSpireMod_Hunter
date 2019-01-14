@@ -12,6 +12,7 @@ import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostDeathSubscriber;
 
 import com.czq.mod.pet.actions.pet.SpawnPetAction;
+import com.czq.mod.pet.characters.Giant;
 import com.czq.mod.pet.helpers.GiantModHelper;
 import com.czq.mod.pet.helpers.PetHelper;
 import com.czq.mod.pet.monsters.pets.DefectPet;
@@ -35,16 +36,16 @@ import com.megacrit.cardcrawl.rooms.MonsterRoomElite;
  */
 @SpireInitializer
 public class ReceiveInBattle implements PostBattleSubscriber,
-		OnStartBattleSubscriber,PostDeathSubscriber {
+		OnStartBattleSubscriber, PostDeathSubscriber {
 	private static final Logger logger = LogManager
 			.getLogger(ReceiveInBattle.class.getName());
-	
+
 	public static boolean tempSeenDefect = false;
 
 	public static void initialize() {
 		new ReceiveInBattle();
 	}
-	
+
 	public ReceiveInBattle() {
 		BaseMod.subscribe(this);
 		logger.info("subscribe receiveinbattle");
@@ -73,8 +74,12 @@ public class ReceiveInBattle implements PostBattleSubscriber,
 	@Override
 	public void receiveOnBattleStart(AbstractRoom room) {
 		GiantModHelper.pets.clear();
+		if (GiantModHelper.weapon != null)
+			GiantModHelper.weapon.clear();
+		// GiantModHelper.weapon.init();
 		logger.info("On battle start.");
-		if ((room instanceof MonsterRoomElite) && (!DefectPet.seenDefect))
+		if ((room instanceof MonsterRoomElite) && (!DefectPet.seenDefect)
+				&& (AbstractDungeon.player instanceof Giant))
 
 		{
 			logger.info("create defect");
@@ -91,9 +96,10 @@ public class ReceiveInBattle implements PostBattleSubscriber,
 	}
 
 	/**
-	* 描述： 
-	* @see basemod.interfaces.PostDeathSubscriber#receivePostDeath()
-	*/ 
+	 * 描述：
+	 * 
+	 * @see basemod.interfaces.PostDeathSubscriber#receivePostDeath()
+	 */
 	@Override
 	public void receivePostDeath() {
 		logger.info("On Death.");

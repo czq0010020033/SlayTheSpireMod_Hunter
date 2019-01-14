@@ -40,6 +40,7 @@ public abstract class Pet extends AbstractMonster {
 	public int blockAmt = 0;
 	public int heal = 0;
 	public int passiveAmount = 0;
+	public boolean taunt = false;
 
 	/**
 	 * <p>
